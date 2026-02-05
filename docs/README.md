@@ -1,127 +1,131 @@
-# Blink Speech - Complete Documentation
+# Blink Speech - Kompletna Dokumentacja
 
-> **Turning blinks and gaze into voice – communication without boundaries.**
+> **Zamieniamy mrugnięcia i spojrzenia w głos – komunikacja bez barier.**
 
-Welcome to the comprehensive documentation for **Blink Speech**, an assistive communication tool that transforms eye blink patterns and gaze gestures into spoken phrases using computer vision and speech synthesis.
+Witaj w kompleksowej dokumentacji projektu **Blink Speech** – narzędzia do wspomagania komunikacji, które przekształca wzorce mrugnięć oczu i gesty wzroku w wypowiadane frazy, wykorzystując widzenie komputerowe (computer vision) i syntezę mowy (speech synthesis).
 
-## 📚 Documentation Structure
+## 📚 Struktura Dokumentacji
 
-This documentation is organized into the following sections:
+Dokumentacja jest podzielona na następujące sekcje, które pomogą Ci zrozumieć projekt od podstaw:
 
-### 🏗️ **Architecture & Design**
-- [**Architecture Overview**](./architecture.md) - System design, data flow, and technical architecture
-- [**Frontend Components**](./frontend-components.md) - React components, hooks, and utilities
-- [**API Documentation**](./api-documentation.md) - Backend endpoints, database schema, and integrations
+### 🏗️ **Architektura i Projektowanie**
+- [**Przegląd Architektury**](./architecture.md) - Projektowanie systemu, przepływ danych i architektura techniczna. Dowiesz się, jak poszczególne komponenty współpracują ze sobą, tworząc spójną aplikację.
+- [**Komponenty Frontend**](./frontend-components.md) - Komponenty React, hooki (hooks) i narzędzia pomocnicze. Poznasz strukturę interfejsu użytkownika i jak jest zbudowany.
+- [**Dokumentacja API**](./api-documentation.md) - Endpointy backendu, schemat bazy danych i integracje z zewnętrznymi serwisami. Tu znajdziesz szczegółowy opis wszystkich punktów końcowych API.
 
-### 🚀 **Getting Started**
-- [**Installation Guide**](./installation.md) - Complete setup for development and production
-- [**User Guide**](./user-guide.md) - How to use the application effectively
-- [**Configuration**](./configuration.md) - Environment variables and settings
+### 🚀 **Pierwsze Kroki**
+- [**Przewodnik Instalacji**](./installation.md) - Kompletna instrukcja konfiguracji środowiska deweloperskiego i produkcyjnego. Krok po kroku nauczysz się, jak uruchomić projekt na swoim komputerze.
+- [**Instrukcja Użytkownika**](./user-guide.md) - Jak efektywnie korzystać z aplikacji. Przewodnik dla końcowych użytkowników wyjaśniający wszystkie funkcje.
+- [**Konfiguracja**](./configuration.md) - Zmienne środowiskowe (environment variables) i ustawienia systemowe. Poznasz wszystkie opcje konfiguracyjne projektu.
 
-### 💻 **Development**
-- [**Development Guide**](./development-guide.md) - Developer setup, workflows, and contribution guidelines
-- [**Gesture Detection**](./gesture-detection.md) - Computer vision implementation and algorithms
-<!-- - [**Speech Synthesis**](./speech-synthesis.md) - Text-to-speech implementation details -->
+### 💻 **Rozwój Projektu**
+- [**Przewodnik Dewelopera**](./development-guide.md) - Konfiguracja środowiska deweloperskiego, workflow i zasady kontrybucji do projektu. Niezbędnik dla każdego, kto chce rozwijać ten projekt.
+- [**Detekcja Gestów**](./gesture-detection.md) - Implementacja widzenia komputerowego i algorytmy rozpoznawania mrugnięć. Szczegółowe wyjaśnienie, jak działa system wykrywania gestów okulomotorycznych.
+<!-- - [**Synteza Mowy**](./speech-synthesis.md) - Szczegóły implementacji text-to-speech -->
 
-### 🚀 **Deployment & Operations**
-- [**Deployment Guide**](./deployment.md) - Production deployment instructions
-- [**Troubleshooting**](./troubleshooting.md) - Common issues and solutions
+### 🚀 **Wdrożenie i Operacje**
+- [**Przewodnik Wdrożenia**](./deployment.md) - Instrukcje wdrażania aplikacji na środowisko produkcyjne. Dowiesz się, jak opublikować aplikację w Internecie.
+- [**Rozwiązywanie Problemów**](./troubleshooting.md) - Najczęstsze problemy i ich rozwiązania. Pomoc w diagnostyce i naprawie typowych błędów.
 
 ---
 
-## 🎯 Quick Start
+## 🎯 Szybki Start
 
-1. **Clone the repository**
+Aby szybko rozpocząć pracę z projektem, wykonaj poniższe kroki:
+
+1. **Sklonuj repozytorium** (pobierz kod źródłowy na swój komputer)
    ```bash
    git clone https://github.com/akshad-exe/Blink-Speech.git
    cd Blink-Speech
    ```
 
-2. **Follow the [Installation Guide](./installation.md)** for detailed setup instructions
+2. **Postępuj zgodnie z [Przewodnikiem Instalacji](./installation.md)** – tam znajdziesz szczegółowe instrukcje konfiguracji
 
-3. **Read the [User Guide](./user-guide.md)** to learn how to use the application
+3. **Przeczytaj [Instrukcję Użytkownika](./user-guide.md)** – poznasz wszystkie funkcje aplikacji i nauczysz się z nich korzystać
 
-4. **Check [Development Guide](./development-guide.md)** if you want to contribute
+4. **Sprawdź [Przewodnik Dewelopera](./development-guide.md)** – jeśli chcesz przyczynić się do rozwoju projektu
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Stos Technologiczny
 
-| Component | Technology | Purpose |
+Poniższa tabela przedstawia technologie użyte w projekcie wraz z ich przeznaczeniem:
+
+| Komponent | Technologia | Przeznaczenie |
 |-----------|------------|---------|
-| **Frontend** | React 18 + Vite | Modern web application framework |
-| **UI Library** | Radix UI + Tailwind CSS | Accessible components and styling |
-| **Computer Vision** | MediaPipe + WebGazer.js | Eye tracking and blink detection |
-| **Machine Learning** | TensorFlow.js | Face landmark detection |
-| **Backend** | Next.js API Routes | RESTful API endpoints |
-| **Database** | Supabase (PostgreSQL) | User data and gesture mappings |
-| **Authentication** | Supabase Auth | User session management |
-| **Storage** | IndexedDB (localForage) | Local data persistence |
-| **Speech** | Web Speech API | Text-to-speech synthesis |
-| **SMS** | Twilio | Emergency SMS notifications |
-| **Deployment** | Vercel | Hosting and CI/CD |
+| **Frontend** | React 18 + Vite | Nowoczesny framework do budowy aplikacji webowych. React to biblioteka do tworzenia interfejsów użytkownika, a Vite to szybkie narzędzie do budowania projektu. |
+| **Biblioteka UI** | Radix UI + Tailwind CSS | Dostępne komponenty i stylowanie. Radix UI dostarcza gotowe, dostępne komponenty, a Tailwind CSS to narzędzie do szybkiego stylowania. |
+| **Widzenie Komputerowe** | MediaPipe + WebGazer.js | Śledzenie oczu i wykrywanie mrugnięć. To biblioteki, które analizują obraz z kamery, aby wykrywać ruchy oczu. |
+| **Uczenie Maszynowe** | TensorFlow.js | Wykrywanie punktów charakterystycznych twarzy (face landmarks). TensorFlow.js to biblioteka uczenia maszynowego działająca w przeglądarce. |
+| **Backend** | Next.js API Routes | Endpointy RESTful API. Next.js pozwala tworzyć punkty końcowe API bezpośrednio w aplikacji. |
+| **Baza Danych** | Supabase (PostgreSQL) | Przechowywanie danych użytkowników i mapowań gestów. Supabase to platforma backendowa oparta na PostgreSQL. |
+| **Uwierzytelnianie** | Supabase Auth | Zarządzanie sesjami użytkowników. System logowania i rejestracji użytkowników. |
+| **Pamięć Lokalna** | IndexedDB (localForage) | Lokalne przechowywanie danych w przeglądarce. Dane są zapisywane na urządzeniu użytkownika. |
+| **Synteza Mowy** | Web Speech API | Synteza tekstu na mowę (text-to-speech). API przeglądarki, które wypowiada tekst głosem. |
+| **SMS** | Twilio | Powiadomienia SMS w sytuacjach awaryjnych. Usługa do wysyłania wiadomości tekstowych. |
+| **Wdrożenie** | Vercel | Hosting i ciągła integracja/wdrażanie (CI/CD). Platforma do publikacji aplikacji webowych. |
 
 ---
 
-## 🏥 Use Cases & Impact
+## 🏥 Zastosowania i Wpływ Społeczny
 
-### Primary Use Cases
-- **Critical Care**: ICU patients, post-surgery recovery, locked-in syndrome
-- **Accessibility**: ALS, muscular dystrophy, motor impairments
-- **Temporary Conditions**: Post-surgery, severe laryngitis, intubation recovery
-- **Emergency Situations**: When traditional communication is impossible
+### Główne Przypadki Użycia
+- **Opieka Intensywna**: Pacjenci na OIT (oddziale intensywnej terapii), powrót do zdrowia po operacji, zespół locked-in syndrome (pacjenci całkowicie sparaliżowani, ale świadomi)
+- **Dostępność**: Choroba ALS (stwardnienie zanikowe boczne), dystrofia mięśniowa, niepełnosprawność ruchowa
+- **Stany Tymczasowe**: Okres pooperacyjny, ciężkie zapalenie krtani, rekonwalescencja po intubacji
+- **Sytuacje Awaryjne**: Kiedy tradycyjna komunikacja jest niemożliwa
 
-### Key Features
-- ✅ **Zero Installation** - Works in any modern web browser
-- ✅ **Privacy First** - All processing happens client-side
-- ✅ **Customizable** - User-defined gesture-to-phrase mappings
-- ✅ **Offline Ready** - Core functionality works without internet
-- ✅ **Responsive** - Works on desktop, tablet, and mobile devices
-- ✅ **Accessible** - WCAG compliant interface design
+### Kluczowe Funkcje
+- ✅ **Bez Instalacji** - Działa w każdej nowoczesnej przeglądarce internetowej, wystarczy otworzyć stronę
+- ✅ **Prywatność Na Pierwszym Miejscu** - Całe przetwarzanie odbywa się po stronie klienta (w przeglądarce), dane nie są wysyłane do serwera
+- ✅ **Konfigurowalność** - Użytkownik może samodzielnie definiować mapowania gestów na frazy
+- ✅ **Gotowość Offline** - Podstawowe funkcje działają bez połączenia z Internetem
+- ✅ **Responsywność** - Działa na komputerach stacjonarnych, tabletach i urządzeniach mobilnych
+- ✅ **Dostępność** - Interfejs zaprojektowany zgodnie ze standardami WCAG (Web Content Accessibility Guidelines)
 
 ---
 
-## 🤝 Team
+## 🤝 Zespół
 
-| Role | Name | GitHub |
+| Rola | Imię i Nazwisko | GitHub |
 |------|------|---------|
-| 🧠 **Lead** | Md Athar Jamal Makki | [@atharhive](https://github.com/atharhive) |
+| 🧠 **Lider Projektu** | Md Athar Jamal Makki | [@atharhive](https://github.com/atharhive) |
 | 🎨 **Frontend** | Akshad Jogi | [@akshad-exe](https://github.com/akshad-exe) |
 | 🛠 **Backend** | Ayush Sarkar | [@dev-Ninjaa](https://github.com/dev-Ninjaa) |
 
 ---
 
-## 📋 Quick Reference
+## 📋 Szybka Referencja
 
-### Common Gesture Patterns
-- **Single Blink**: Basic acknowledgment
-- **Double Blink**: "Yes" or confirmation
-- **Triple Blink**: "No" or denial
-- **Long Blink**: "Thank you" or "Stop"
-- **Blink + Gaze**: Directional commands (help, water, etc.)
+### Najpopularniejsze Wzorce Gestów
+- **Pojedyncze Mrugnięcie**: Podstawowe potwierdzenie, sygnał "zrozumiałem"
+- **Podwójne Mrugnięcie**: "Tak" lub potwierdzenie zgody
+- **Potrójne Mrugnięcie**: "Nie" lub odmowa
+- **Długie Mrugnięcie**: "Dziękuję" lub "Stop" (zatrzymaj akcję)
+- **Mrugnięcie + Spojrzenie**: Polecenia kierunkowe (pomoc, woda, itp.) – kombinacja mrugnięcia z kierunkiem spojrzenia
 
-### Performance Specifications
-- **Detection Latency**: <150ms
-- **Speech Output**: <1s after pattern recognition
-- **Browser Support**: Chrome 80+, Firefox 75+, Safari 13+, Edge 80+
-- **Hardware Requirements**: Webcam, 2GB RAM minimum
-
----
-
-## 🔗 External Resources
-
-- [**Live Demo**](https://blink-speech.vercel.app) - Try the application
-- [**Project Repository**](https://github.com/akshad-exe/Blink-Speech) - Source code
-- [**Issue Tracker**](https://github.com/akshad-exe/Blink-Speech/issues) - Report bugs or request features
-- [**WebGazer.js Documentation**](https://webgazer.cs.brown.edu/) - Eye tracking library
-- [**MediaPipe Face Mesh**](https://google.github.io/mediapipe/solutions/face_mesh.html) - Facial landmark detection
+### Specyfikacje Wydajności
+- **Opóźnienie Detekcji**: <150ms (mniej niż 150 milisekund od gestu do wykrycia)
+- **Wyjście Mowy**: <1s po rozpoznaniu wzorca (wypowiedź następuje w ciągu sekundy)
+- **Wsparcie Przeglądarek**: Chrome 80+, Firefox 75+, Safari 13+, Edge 80+ (działa w najnowszych wersjach popularnych przeglądarek)
+- **Wymagania Sprzętowe**: Kamera internetowa (webcam), minimum 2GB RAM
 
 ---
 
-## 📄 License
+## 🔗 Zasoby Zewnętrzne
 
-This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
+- [**Demo na Żywo**](https://blink-speech.vercel.app) - Wypróbuj aplikację bez instalacji
+- [**Repozytorium Projektu**](https://github.com/akshad-exe/Blink-Speech) - Kod źródłowy projektu
+- [**Zgłaszanie Problemów**](https://github.com/akshad-exe/Blink-Speech/issues) - Zgłaszaj błędy lub proponuj nowe funkcje
+- [**Dokumentacja WebGazer.js**](https://webgazer.cs.brown.edu/) - Biblioteka do śledzenia wzroku (eye tracking)
+- [**MediaPipe Face Mesh**](https://google.github.io/mediapipe/solutions/face_mesh.html) - Wykrywanie punktów charakterystycznych twarzy
 
 ---
 
-**Need help?** Check our [Troubleshooting Guide](./troubleshooting.md) or [open an issue](https://github.com/akshad-exe/Blink-Speech/issues/new).
+## 📄 Licencja
+
+Ten projekt jest udostępniony na licencji MIT License. Szczegóły znajdziesz w pliku [LICENSE](../LICENSE).
+
+---
+
+**Potrzebujesz pomocy?** Sprawdź nasz [Przewodnik Rozwiązywania Problemów](./troubleshooting.md) lub [otwórz nowe zgłoszenie](https://github.com/akshad-exe/Blink-Speech/issues/new).
