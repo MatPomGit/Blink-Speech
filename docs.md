@@ -1,37 +1,37 @@
-# Blink Speech: Complete Technical Documentation
+# Blink Speech: Kompletna Dokumentacja Techniczna
 
-> **Turning blinks and gaze into voice – communication without boundaries.**
+> **Zamieniamy mrugnięcia i spojrzenia w głos – komunikacja bez granic.**
 
-**Blink Speech** is a browser-based assistive communication application that transforms intentional blink patterns and gaze gestures into spoken phrases. Built with modern web technologies, it operates entirely client-side, ensuring user privacy with a zero-install, anonymous-first approach. 👁️‍🗨️ → 🗣️
-
----
-
-## 📚 **Documentation Navigation**
-
-### 🚀 **Getting Started**
-- [**📖 Complete Documentation Suite**](./docs/README.md) - Main documentation hub
-- [**🛠️ Installation Guide**](./docs/installation.md) - Setup for development and production
-- [**👤 User Guide**](./docs/user-guide.md) - How to use Blink Speech effectively
-- [**🔧 Configuration**](./docs/configuration.md) - Environment variables and settings
-
-### 🏗️ **Architecture & Development**
-- [**🏛️ System Architecture**](./docs/architecture.md) - Technical design and data flow
-- [**💻 Development Guide**](./docs/development-guide.md) - Developer workflows and best practices
-- [**🧩 Frontend Components**](./docs/frontend-components.md) - React components and hooks
-- [**🔗 API Documentation**](./docs/api-documentation.md) - Backend endpoints and database
-
-### 🔬 **Core Technologies**
-- [**👁️ Gesture Detection**](./docs/gesture-detection.md) - Computer vision implementation
-- [**🎵 Speech Synthesis**](./docs/speech-synthesis.md) - Text-to-speech integration
-- [**🌐 Frontend Architecture**](./docs/frontend.md) - React + Vite implementation
-
-### 🚀 **Operations**
-- [**🚀 Deployment Guide**](./docs/deployment.md) - Production deployment strategies
-- [**🔍 Troubleshooting**](./docs/troubleshooting.md) - Common issues and solutions
+**Blink Speech** to działająca w przeglądarce aplikacja wspomagająca komunikację, która przekształca intencjonalne wzorce mrugnięć i gesty wzrokowe w wypowiadane frazy. Zbudowana przy użyciu nowoczesnych technologii webowych, działa całkowicie po stronie klienta, zapewniając prywatność użytkownika dzięki podejściu wymagającemu zero instalacji i priorytetowi anonimowości. 👁️‍🗨️ → 🗣️
 
 ---
 
-## 🛠️ **Current Tech Stack**
+## 📚 **Nawigacja po Dokumentacji**
+
+### 🚀 **Pierwsze Kroki**
+- [**📖 Kompletny Pakiet Dokumentacji**](./docs/README.md) - Główny hub dokumentacji
+- [**🛠️ Przewodnik Instalacji**](./docs/installation.md) - Konfiguracja dla środowiska deweloperskiego i produkcyjnego
+- [**👤 Przewodnik Użytkownika**](./docs/user-guide.md) - Jak efektywnie korzystać z Blink Speech
+- [**🔧 Konfiguracja**](./docs/configuration.md) - Zmienne środowiskowe i ustawienia
+
+### 🏗️ **Architektura i Rozwój**
+- [**🏛️ Architektura Systemu**](./docs/architecture.md) - Projekt techniczny i przepływ danych
+- [**💻 Przewodnik Deweloperski**](./docs/development-guide.md) - Przepływy pracy i najlepsze praktyki dla programistów
+- [**🧩 Komponenty Frontend**](./docs/frontend-components.md) - Komponenty React i hooki
+- [**🔗 Dokumentacja API**](./docs/api-documentation.md) - Endpointy backendu i baza danych
+
+### 🔬 **Kluczowe Technologie**
+- [**👁️ Detekcja Gestów**](./docs/gesture-detection.md) - Implementacja widzenia komputerowego
+- [**🎵 Synteza Mowy**](./docs/speech-synthesis.md) - Integracja text-to-speech
+- [**🌐 Architektura Frontend**](./docs/frontend.md) - Implementacja React + Vite
+
+### 🚀 **Operacje**
+- [**🚀 Przewodnik Wdrożenia**](./docs/deployment.md) - Strategie wdrażania produkcyjnego
+- [**🔍 Rozwiązywanie Problemów**](./docs/troubleshooting.md) - Typowe problemy i rozwiązania
+
+---
+
+## 🛠️ **Aktualny Stos Technologiczny**
 
 ![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -47,9 +47,9 @@
 
 ---
 
-## 🎯 **Quick Start**
+## 🎯 **Szybki Start**
 
-1. **📥 Clone & Install**
+1. **📥 Klonowanie i Instalacja**
    ```bash
    git clone https://github.com/akshad-exe/Blink-Speech.git
    cd Blink-Speech
@@ -57,11 +57,11 @@
    cd ../backend && npm install
    ```
 
-2. **⚙️ Configure Environment**
-   - Set up [Supabase](https://supabase.com) project
-   - Configure environment variables (see [Configuration Guide](./docs/configuration.md))
+2. **⚙️ Konfiguracja Środowiska**
+   - Skonfiguruj projekt [Supabase](https://supabase.com)
+   - Skonfiguruj zmienne środowiskowe (zobacz [Przewodnik Konfiguracji](./docs/configuration.md))
 
-3. **🚀 Run Development**
+3. **🚀 Uruchomienie w Trybie Deweloperskim**
    ```bash
    # Frontend (Terminal 1)
    cd frontend && npm run dev
@@ -70,59 +70,81 @@
    cd backend && npm run dev
    ```
 
-4. **🎯 Start Using**
-   - Open `https://localhost:5173`
-   - Allow camera permissions
-   - Complete calibration
-   - Start communicating with gestures!
+4. **🎯 Rozpoczęcie Użytkowania**
+   - Otwórz `https://localhost:5173`
+   - Pozwól na dostęp do kamery
+   - Ukończ kalibrację
+   - Zacznij komunikować się przy użyciu gestów!
 
 ---
 
-## 🧠 **Core Concepts**
+## 🧠 **Podstawowe Koncepcje**
 
-Blink Speech uses advanced computer vision to translate eye movements into speech by detecting two primary inputs via the user's webcam: **blink patterns** and **gaze directions**. These inputs are combined to trigger pre-configured or fully customizable phrases.
+Blink Speech wykorzystuje zaawansowane widzenie komputerowe do tłumaczenia ruchów oczu na mowę poprzez wykrywanie dwóch podstawowych sygnałów wejściowych przez kamerę internetową użytkownika: **wzorców mrugnięć** i **kierunków spojrzenia**. Te sygnały są łączone w celu wywołania predefiniowanych lub w pełni konfigurowalnych fraz.
 
-### 🎯 **Supported Gestures**
+**Wyjaśnienie:** System działa w czasie rzeczywistym, analizując obraz z kamery i wykrywając charakterystyczne ruchy oczu. Każde mrugnięcie jest rejestrowane z dokładnością co do milisekundy, a system rozpoznaje różne typy mrugnięć na podstawie ich czasu trwania i częstotliwości występowania.
 
-| Gesture Type | Pattern | Default Phrase | Use Case |
+### 🎯 **Obsługiwane Gesty**
+
+| Typ Gestu | Wzorzec | Domyślna Fraza | Przypadek Użycia |
 |-------------|---------|----------------|----------|
-| **Single Blink** | One quick blink | "Hello" | Acknowledgment |
-| **Double Blink** | Two blinks within 400ms | "Yes" | Affirmative |
-| **Triple Blink** | Three blinks within 700ms | "No" | Negative |
-| **Long Blink** | Hold blink >800ms | "Thank you" | Gratitude |
-| **Blink + Gaze** | Any blink + direction | Custom phrases | Complex communication |
+| **Pojedyncze Mrugnięcie** | Jedno szybkie mrugnięcie | "Hello" | Potwierdzenie uwagi |
+| **Podwójne Mrugnięcie** | Dwa mrugnięcia w ciągu 400ms | "Yes" | Odpowiedź twierdząca |
+| **Potrójne Mrugnięcie** | Trzy mrugnięcia w ciągu 700ms | "No" | Odpowiedź negatywna |
+| **Długie Mrugnięcie** | Trzymanie mrugnięcia >800ms | "Thank you" | Wyrażenie wdzięczności |
+| **Mrugnięcie + Spojrzenie** | Dowolne mrugnięcie + kierunek | Niestandardowe frazy | Złożona komunikacja |
 
-### 🌍 **Real-World Applications**
+**Dla początkujących:** Każdy typ gestu ma specyficzne parametry czasowe. Na przykład, podwójne mrugnięcie wymaga dwóch mrugnięć w bardzo krótkim czasie (400 milisekund = 0.4 sekundy). System musi być wystarczająco inteligentny, aby odróżnić intencjonalne gesty od naturalnych, spontanicznych mrugnięć.
 
-- **🏥 Healthcare**: ICU patients, post-surgery communication, locked-in syndrome
-- **♿ Accessibility**: ALS, muscular dystrophy, motor impairments
-- **⏰ Temporary**: Speech loss recovery, oral surgery, intubation
-- **🚨 Emergency**: When traditional communication fails
+### 🌍 **Zastosowania w Świecie Rzeczywistym**
 
-### 🔬 **Detection Technology**
+- **🏥 Ochrona Zdrowia**: Pacjenci na OIT, komunikacja po operacji, zespół locked-in (całkowite porażenie przy zachowanej świadomości)
+- **♿ Dostępność**: ALS (stwardnienie zanikowe boczne), dystrofia mięśniowa, zaburzenia motoryczne
+- **⏰ Tymczasowe**: Rekonwalescencja po utracie mowy, chirurgia jamy ustnej, intubacja
+- **🚨 Sytuacje Awaryjne**: Gdy tradycyjna komunikacja zawodzi
 
-**Primary System**: MediaPipe FaceLandmarker for high-precision facial landmark tracking  
-**Fallback System**: WebGazer.js for broader browser compatibility
+### 🔬 **Technologia Detekcji**
 
-#### **Blink Detection (EAR Method)**
-- **Algorithm**: Eye Aspect Ratio (EAR) calculation using facial landmarks
-- **Threshold**: Dynamic threshold adjustment (typically ~0.25)
-- **Patterns**: Single, double (400ms), triple (700ms), long (800ms+) blinks
-- **Accuracy**: >95% detection rate in optimal conditions
+**System Główny**: MediaPipe FaceLandmarker dla wysokoprecyzyjnego śledzenia punktów charakterystycznych twarzy  
+**System Zapasowy**: WebGazer.js dla szerszej kompatybilności z przeglądarkami
 
-#### **Gaze Tracking**
-- **Calibration**: 5-point calibration system for personalized tracking
-- **Directions**: Left, right, up, down, center detection
-- **Precision**: ±100px threshold (adjustable)
-- **Persistence**: Calibration data stored locally
+**Wyjaśnienie:** Aplikacja wykorzystuje dwupoziomową strategię detekcji. Najpierw próbuje użyć MediaPipe, które oferuje najlepszą dokładność dzięki zaawansowanym algorytmom uczenia maszynowego. Jeśli MediaPipe nie jest dostępne lub zawodzi, system automatycznie przełącza się na WebGazer.js, zapewniając działanie aplikacji nawet na starszych urządzeniach.
 
-### 🗂️ **Gesture-to-Speech Mapping**
+#### **Detekcja Mrugnięć (Metoda EAR)**
 
-**Default Mappings**: Pre-configured essential phrases for immediate use  
-**Custom Mappings**: Fully user-customizable through intuitive interface  
-**Storage**: Local browser storage with optional cloud sync via Supabase
+**Wyjaśnienie techniczne:** Eye Aspect Ratio (EAR) to matematyczny sposób określenia, czy oko jest otwarte czy zamknięte. Algorytm ten analizuje położenie sześciu kluczowych punktów wokół oka i oblicza stosunek pionowych do poziomych odległości między nimi.
 
-#### **Mapping Structure**
+- **Algorytm**: Obliczanie Eye Aspect Ratio (EAR) z wykorzystaniem punktów charakterystycznych twarzy
+- **Próg**: Dynamiczne dostosowywanie progu (typowo ~0.25)
+  - **Dla początkujących:** Gdy wartość EAR spada poniżej progu 0.25, system rozpoznaje to jako mrugnięcie. Próg jest "dynamiczny", co oznacza, że dostosowuje się do indywidualnych cech użytkownika podczas kalibracji
+- **Wzorce**: Pojedyncze, podwójne (400ms), potrójne (700ms), długie (800ms+) mrugnięcia
+- **Dokładność**: >95% skuteczności detekcji w optymalnych warunkach
+
+**Matematyka za EAR:**
+```
+EAR = (||p2-p6|| + ||p3-p5||) / (2 * ||p1-p4||)
+```
+Gdzie p1-p6 to współrzędne punktów wokół oka. Gdy oko jest otwarte, EAR jest wysoki (~0.3-0.4). Gdy oko jest zamknięte, EAR drastycznie spada (<0.2).
+
+#### **Śledzenie Spojrzenia (Gaze Tracking)**
+
+- **Kalibracja**: System kalibracji 5-punktowej dla spersonalizowanego śledzenia
+  - **Wyjaśnienie:** Użytkownik patrzy kolejno na 5 punktów na ekranie (zazwyczaj: środek, góra, dół, lewo, prawo). System "uczy się" charakterystycznych wzorców ruchu źrenic dla każdego kierunku spojrzenia u danego użytkownika
+- **Kierunki**: Detekcja spojrzenia w lewo, prawo, góra, dół, środek
+- **Precyzja**: Próg ±100px (konfigurowalny)
+  - **Dla początkujących:** System toleruje odchylenie do 100 pikseli od idealnego punktu. Dzięki temu nie trzeba patrzeć idealnie dokładnie – system jest "wyrozumiały" dla naturalnych ruchów oka
+- **Trwałość**: Dane kalibracji przechowywane lokalnie
+  - **Wyjaśnienie:** Po pierwszej kalibracji dane są zapisywane w przeglądarce (IndexedDB), więc nie musisz kalibrować systemu przy każdym użyciu
+
+### 🗂️ **Mapowanie Gest-na-Mowę**
+
+**Mapowania Domyślne**: Predefiniowane podstawowe frazy do natychmiastowego użycia  
+**Mapowania Niestandardowe**: W pełni konfigurowalne przez użytkownika poprzez intuicyjny interfejs  
+**Przechowywanie**: Lokalna pamięć przeglądarki z opcjonalną synchronizacją w chmurze przez Supabase
+
+**Wyjaśnienie:** System działa jak "słownik gestów". Każdy gest (np. "podwójne mrugnięcie + spojrzenie w lewo") jest kluczem, a przypisana fraza (np. "Potrzebuję pomocy") jest wartością. Użytkownik może dowolnie edytować te powiązania.
+
+#### **Struktura Mapowania**
 ```json
 {
   "singleBlink": "Hello",
@@ -136,181 +158,241 @@ Blink Speech uses advanced computer vision to translate eye movements into speec
 }
 ```
 
-#### **Customization Features**
-- **🎨 Visual Editor**: Point-and-click gesture mapping interface
-- **📱 Import/Export**: Share mappings between devices
-- **🌐 Multi-language**: Support for any language or phrase
-- **🔄 Real-time Updates**: Changes applied instantly
+**Dla początkujących:** Powyższy JSON (JavaScript Object Notation) to standardowy format danych. Każda linia definiuje jedno mapowanie: nazwa gestu po lewej stronie (klucz), fraza po prawej stronie (wartość). System odczytuje ten plik i wie, co powiedzieć dla każdego wykrytego gestu.
+
+#### **Funkcje Personalizacji**
+- **🎨 Edytor Wizualny**: Interfejs mapowania gestów typu "wskaż i kliknij"
+- **📱 Import/Export**: Udostępnianie mapowań między urządzeniami
+- **🌐 Wielojęzyczność**: Wsparcie dla dowolnego języka i frazy
+- **🔄 Aktualizacje w Czasie Rzeczywistym**: Zmiany stosowane natychmiast bez restartu
 
 -----
 
-## 🔄 **User Journey & Features**
+## 🔄 **Ścieżka Użytkownika i Funkcje**
 
-### **1. 🚀 Onboarding (First-Time Users)**
-- **Welcome**: Introduction to Blink Speech capabilities
-- **Permissions**: Secure camera access request with clear explanations
-- **Calibration**: Interactive 5-point gaze calibration with visual feedback
-- **Tutorial**: Optional gesture practice with real-time feedback
+### **1. 🚀 Wdrożenie (Użytkownicy Po Raz Pierwszy)**
+- **Powitanie**: Wprowadzenie do możliwości Blink Speech
+- **Uprawnienia**: Bezpieczne żądanie dostępu do kamery z jasnymi wyjaśnieniami
+  - **Wyjaśnienie:** Aplikacja wymaga dostępu do kamery, aby analizować ruchy oczu. Przetwarzanie odbywa się całkowicie lokalnie w przeglądarce – żadne nagranie wideo nie jest wysyłane do internetu
+- **Kalibracja**: Interaktywna kalibracja spojrzenia w 5 punktach z wizualną informacją zwrotną
+  - **Dla początkujących:** To kluczowy krok! System "uczy się" Twoich indywidualnych cech oczu i ruchów źrenic. Patrz uważnie na każdy punkt przez kilka sekund
+- **Samouczek**: Opcjonalne ćwiczenie gestów z informacją zwrotną w czasie rzeczywistym
 
-### **2. 🎯 Active Session**
-- **Live Detection**: Real-time gesture recognition with visual indicators
-- **Phrase Preview**: Clear display of detected phrases before speaking
-- **Custom Controls**: Speech toggle, volume, rate, and voice selection
-- **Mapping Editor**: Live editing of gesture-to-phrase mappings
+### **2. 🎯 Aktywna Sesja**
+- **Detekcja na Żywo**: Rozpoznawanie gestów w czasie rzeczywistym z wizualnymi wskaźnikami
+  - **Wyjaśnienie:** Na ekranie widzisz małe ikony lub wskaźniki pokazujące, kiedy system wykrywa mrugnięcie lub kierunek spojrzenia. To pomaga w nauce i pewności używania systemu
+- **Podgląd Frazy**: Wyraźne wyświetlanie wykrytych fraz przed wypowiedzeniem
+- **Niestandardowe Kontrolki**: Przełącznik mowy, głośność, prędkość i wybór głosu
+- **Edytor Mapowań**: Edycja mapowań gest-na-frazę na żywo podczas użytkowania
 
-### **3. 🔧 Advanced Features**
-- **Performance Optimization**: Adaptive frame rate and threshold adjustment
-- **Accessibility**: High contrast, large text, screen reader compatibility  
-- **Emergency Mode**: Quick access to critical communication phrases
-- **Data Management**: Export/import settings, cloud sync options
+### **3. 🔧 Funkcje Zaawansowane**
+- **Optymalizacja Wydajności**: Adaptacyjna częstotliwość klatek i dostosowanie progu
+  - **Wyjaśnienie:** System automatycznie dostosowuje się do mocy Twojego komputera. Na wolniejszym urządzeniu zmniejsza częstotliwość analizy klatek wideo, aby działać płynnie
+- **Dostępność**: Wysoki kontrast, duży tekst, kompatybilność z czytnikami ekranu  
+- **Tryb Awaryjny**: Szybki dostęp do krytycznych fraz komunikacyjnych
+  - **Dla początkujących:** Specjalny tryb umożliwiający natychmiastowy dostęp do najważniejszych komunikatów (np. "Pomocy!", "Źle się czuję", "Wezwij lekarza")
+- **Zarządzanie Danymi**: Export/import ustawień, opcje synchronizacji w chmurze
 
-### **4. 🛡️ Privacy & Security**
-- **Local Processing**: All video analysis happens on-device
-- **No Data Transmission**: Video never leaves your browser
-- **Secure Storage**: Encrypted local storage for sensitive settings
-- **Anonymous Usage**: No personal information required or collected
+### **4. 🛡️ Prywatność i Bezpieczeństwo**
+- **Przetwarzanie Lokalne**: Cała analiza wideo odbywa się na urządzeniu
+  - **Wyjaśnienie:** To kluczowa cecha! Obraz z kamery jest analizowany przez JavaScript działający w Twojej przeglądarce. Żadne dane wideo nie są wysyłane na serwery zewnętrzne
+- **Brak Transmisji Danych**: Wideo nigdy nie opuszcza Twojej przeglądarki
+- **Bezpieczne Przechowywanie**: Zaszyfrowana pamięć lokalna dla wrażliwych ustawień
+- **Anonimowe Użytkowanie**: Nie są wymagane ani zbierane żadne dane osobowe
 
 -----
 
 ---
 
-## ⚡ **Performance & Specifications**
+## ⚡ **Wydajność i Specyfikacje**
 
-### **System Requirements**
-- **Browser**: Chrome 80+, Firefox 75+, Safari 13+, Edge 80+
-- **Hardware**: 2GB RAM, webcam (720p recommended)
-- **Network**: HTTPS required (automatic in development)
-- **Storage**: ~50MB for full application cache
+### **Wymagania Systemowe**
+- **Przeglądarka**: Chrome 80+, Firefox 75+, Safari 13+, Edge 80+
+- **Sprzęt**: 2GB RAM, kamera internetowa (zalecane 720p)
+  - **Dla początkujących:** Wystarczy standardowy laptop z wbudowaną kamerą. Lepsza jakość kamery (720p lub wyższa) oznacza lepszą dokładność detekcji
+- **Sieć**: Wymagane HTTPS (automatyczne w środowisku deweloperskim)
+  - **Wyjaśnienie:** Nowoczesne przeglądarki wymagają bezpiecznego połączenia HTTPS do dostępu do kamery ze względów bezpieczeństwa
+- **Pamięć**: ~50MB na pełną pamięć podręczną aplikacji
 
-### **Performance Metrics**
-- **Detection Latency**: <150ms from gesture to recognition
-- **Speech Latency**: <1s from gesture to audio output
-- **Frame Rate**: 15-30 FPS (adaptive based on device)
-- **Accuracy**: >95% gesture recognition in optimal conditions
+### **Metryki Wydajności**
+- **Opóźnienie Detekcji**: <150ms od gestu do rozpoznania
+  - **Wyjaśnienie:** System wykrywa mrugnięcie w mniej niż jedną szóstą sekundy – tak szybko, że dla użytkownika wydaje się to natychmiastowe
+- **Opóźnienie Mowy**: <1s od gestu do wyjścia audio
+- **Częstotliwość Klatek**: 15-30 FPS (adaptacyjna w zależności od urządzenia)
+  - **Dla początkujących:** FPS (frames per second) to liczba analizowanych klatek wideo na sekundę. System automatycznie dostosowuje tę wartość – na mocniejszym komputerze analizuje 30 klatek/s, na słabszym 15 klatek/s
+- **Dokładność**: >95% rozpoznawania gestów w optymalnych warunkach
 
-### **Browser Compatibility**
-| Feature | Chrome | Firefox | Safari | Edge |
+### **Kompatybilność Przeglądarek**
+| Funkcja | Chrome | Firefox | Safari | Edge |
 |---------|:------:|:-------:|:------:|:----:|
 | MediaPipe | ✅ | ✅ | ✅ | ✅ |
 | WebGazer | ✅ | ✅ | ⚠️ | ✅ |
 | Speech API | ✅ | ✅ | ✅ | ✅ |
 | IndexedDB | ✅ | ✅ | ✅ | ✅ |
 
+**Legenda:** ✅ = Pełne wsparcie, ⚠️ = Częściowe wsparcie lub ograniczenia
+
 ---
 
-## 🔧 **Technical Implementation**
+## 🔧 **Implementacja Techniczna**
 
-### **Current Architecture**
+### **Aktualna Architektura**
+
+**Wyjaśnienie architektury:** System Blink Speech składa się z dwóch głównych części: frontendu (działa w przeglądarce użytkownika) i backendu (serwer API). Frontend zajmuje się całą analizą wideo i wykrywaniem gestów lokalnie, podczas gdy backend zarządza przechowywaniem niestandardowych mapowań gestów i opcjonalnymi funkcjami jak SMS.
 
 ```
 ┌─────────────────────────────────────────┐
-│           CLIENT (Browser)              │
+│           KLIENT (Przeglądarka)         │
 ├─────────────────────────────────────────┤
 │  React 18 + TypeScript + Vite          │
-│  ├─ MediaPipe (Face Landmarks)         │
-│  ├─ WebGazer.js (Gaze Tracking)        │
+│  ├─ MediaPipe (Punkty Charakterystyczne)│
+│  ├─ WebGazer.js (Śledzenie Wzroku)     │
 │  ├─ Web Speech API (TTS)               │
-│  ├─ LocalForage (Data Storage)         │
-│  └─ Radix UI + Tailwind (Interface)    │
+│  ├─ LocalForage (Przechowywanie Danych)│
+│  └─ Radix UI + Tailwind (Interfejs)    │
 └─────────────────────────────────────────┘
                     │ HTTPS/WSS
 ┌─────────────────────────────────────────┐
-│           SERVER (API)                  │
+│           SERWER (API)                  │
 ├─────────────────────────────────────────┤
 │  Next.js API Routes                    │
-│  ├─ Supabase (Database)                │
-│  ├─ Twilio (SMS Integration)           │
-│  └─ Authentication & Storage           │
+│  ├─ Supabase (Baza Danych)             │
+│  ├─ Twilio (Integracja SMS)            │
+│  └─ Uwierzytelnianie i Przechowywanie  │
 └─────────────────────────────────────────┘
 ```
 
-### **Project Structure**
+**Dla początkujących - komponenty stosu:**
+- **React 18**: Biblioteka JavaScript do budowania interfejsów użytkownika
+- **TypeScript**: JavaScript z typowaniem, które pomaga wykrywać błędy podczas programowania
+- **Vite**: Szybkie narzędzie do budowania aplikacji webowych
+- **MediaPipe**: Biblioteka Google do analizy twarzy i punktów charakterystycznych
+- **WebGazer.js**: Biblioteka do śledzenia wzroku w przeglądarce
+- **Web Speech API**: Natywne API przeglądarki do syntezy mowy (text-to-speech)
+- **LocalForage**: Biblioteka do przechowywania danych lokalnie w przeglądarce
+- **Supabase**: Backend-as-a-Service z bazą danych PostgreSQL
+- **Twilio**: Usługa do wysyłania SMS-ów
+
+### **Struktura Projektu**
 ```
 Blink-Speech/
-├── frontend/          # React + Vite application
+├── frontend/          # Aplikacja React + Vite
 │   ├── src/
-│   │   ├── components/  # UI components
-│   │   ├── hooks/      # Custom React hooks
-│   │   ├── pages/      # Route components  
-│   │   ├── utils/      # Utility functions
-│   │   └── types/      # TypeScript definitions
+│   │   ├── components/  # Komponenty UI
+│   │   ├── hooks/      # Niestandardowe hooki React
+│   │   ├── pages/      # Komponenty tras  
+│   │   ├── utils/      # Funkcje narzędziowe
+│   │   └── types/      # Definicje TypeScript
 │   └── package.json
-├── backend/           # Next.js API routes
-│   ├── pages/api/     # API endpoints
+├── backend/           # Trasy API Next.js
+│   ├── pages/api/     # Endpointy API
 │   └── package.json
-├── docs/             # Complete documentation
-└── README.md         # Project overview
+├── docs/             # Kompletna dokumentacja
+└── README.md         # Przegląd projektu
 ```
 
-### Gesture Recognition Logic
+### Logika Rozpoznawania Gestów
 
-This logic resides in a custom hook (e.g., `hooks/useGestureSpeech.ts`) that processes the video feed.
+**Wyjaśnienie przepływu:** Ta logika znajduje się w niestandardowym hooku (np. `hooks/useGestureSpeech.ts`), który przetwarza strumień wideo klatka po klatce. Dla każdej klatki system:
+1. Wykrywa twarz i punkty charakterystyczne
+2. Oblicza EAR (Eye Aspect Ratio) aby określić stan oka
+3. Określa kierunek spojrzenia na podstawie pozycji źrenicy
+4. Rejestruje timestampy (znaczniki czasu) mrugnięć
+5. Analizuje wzorce mrugnięć aby rozpoznać gesty
+6. Wywołuje odpowiednią frazę przez Web Speech API
 
 ```ts
-// Simplified logic for frame processing
+// Uproszczona logika przetwarzania klatek
 let blinkTimestamps: number[] = [];
 
 async function processFrame(videoElement) {
-  // Prefer MediaPipe for high-fidelity landmarks
+  // Preferuj MediaPipe dla punktów charakterystycznych wysokiej wierności
   const faces = await mediaPipeModel.estimateFaces({ input: videoElement });
   
   if (faces.length > 0) {
     const landmarks = faces[0].scaledMesh;
-    const ear = calculateEAR(landmarks); // Calculate Eye Aspect Ratio
+    const ear = calculateEAR(landmarks); // Oblicz Eye Aspect Ratio
     const gazeDir = gazeDirection(landmarks);
 
+    // Wykryj mrugnięcie gdy EAR spada poniżej progu
     if (ear < DYNAMIC_BLINK_THRESHOLD) {
       blinkTimestamps.push(performance.now());
     }
-    // Detect pattern from timestamps and gaze, then speak
+    // Wykryj wzorzec z timestampów i kierunku spojrzenia, następnie mów
     detectPatternAndSpeak(blinkTimestamps, gazeDir); 
   } else {
-    // Fallback to WebGazer if MediaPipe fails
-    // WebGazer can use brightness of eye patches as a proxy
+    // Powrót do WebGazer jeśli MediaPipe zawiedzie
+    // WebGazer może użyć jasności obszarów oka jako przybliżenia
   }
 }
 ```
 
-### API Endpoints & Data Persistence
+**Wyjaśnienie funkcji calculateEAR:**
+Funkcja `calculateEAR` implementuje wzór matematyczny opisany wcześniej. Pobiera 6 punktów charakterystycznych wokół oka i oblicza stosunek odległości pionowych do poziomych. Niska wartość (< 0.25) oznacza zamknięte oko.
 
-Custom phrase mappings are stored in a **Supabase** database and accessed via a Next.js API route.
+**Wyjaśnienie funkcji detectPatternAndSpeak:**
+Ta funkcja analizuje tablicę `blinkTimestamps` (znaczników czasu mrugnięć) aby określić, czy wykryto specyficzny wzorzec:
+- Jeśli dwa timestampy są w odległości < 400ms = podwójne mrugnięcie
+- Jeśli trzy timestampy są w odległości < 700ms = potrójne mrugnięcie
+- Jeśli jedno mrugnięcie trwa > 800ms = długie mrugnięcie
+System następnie łączy wykryty wzorzec z kierunkiem spojrzenia i wyszukuje odpowiednią frazę w mapowaniu.
 
-**Database Schema:**
+### Endpointy API i Trwałość Danych
 
-  * **Table**: `patterns`
-  * **Columns**:
-      * `sid`: `TEXT PRIMARY KEY`
-      * `mapping`: `JSONB`
+Niestandardowe mapowania fraz są przechowywane w bazie danych **Supabase** i dostępne poprzez trasę API Next.js.
 
-**API Route**: `pages/api/patterns/[sid].ts`
+**Wyjaśnienie architektury danych:** 
+- **Frontend** (przeglądarka): Tymczasowo przechowuje mapowania w LocalStorage/IndexedDB
+- **Backend** (Supabase): Trwale przechowuje mapowania w bazie PostgreSQL
+- **API** (Next.js): Pośredniczy między frontendem a bazą danych
+
+**Schemat Bazy Danych:**
+
+  * **Tabela**: `patterns`
+  * **Kolumny**:
+      * `sid`: `TEXT PRIMARY KEY` - unikalny identyfikator sesji użytkownika
+      * `mapping`: `JSONB` - obiekt JSON zawierający pełne mapowanie gestów
+
+**Wyjaśnienie typów danych:**
+- `TEXT PRIMARY KEY`: Kolumna tekstowa będąca głównym kluczem (unikalny identyfikator rekordu)
+- `JSONB`: Specjalny typ PostgreSQL do przechowywania danych JSON w binarnym formacie – szybszy i bardziej wydajny niż zwykły tekst JSON
+
+**Trasa API**: `pages/api/patterns/[sid].ts`
 
 ```ts
 // pages/api/patterns/[sid].ts
 import { createClient } from '@supabase/supabase-js';
 
-// Initialize Supabase client
+// Inicjalizacja klienta Supabase
 const sb = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
 
 export default async function handler(req, res) {
   const { sid } = req.query;
 
   if (req.method === 'GET') {
+    // Pobierz mapowanie dla danego użytkownika
     const { data } = await sb.from('patterns').select('mapping').eq('sid', sid).single();
-    // Return custom mapping or a default one
+    // Zwróć niestandardowe mapowanie lub domyślne
     res.status(200).json({ mapping: data?.mapping ?? defaultMapping });
   } 
   else if (req.method === 'POST') {
     const { mapping } = req.body;
-    // 'upsert' creates or updates the user's mapping
+    // 'upsert' tworzy lub aktualizuje mapowanie użytkownika
+    // Jeśli rekord z danym sid istnieje - aktualizuje, jeśli nie - tworzy nowy
     await sb.from('patterns').upsert({ sid, mapping }, { onConflict: 'sid' });
     res.status(201).json({ success: true });
   }
 }
 ```
 
-### Text-to-Speech (TTS)
+**Dla początkujących - metody HTTP:**
+- **GET**: Pobiera dane (tutaj: odczytuje mapowanie z bazy)
+- **POST**: Wysyła dane do zapisania (tutaj: zapisuje/aktualizuje mapowanie)
+- **upsert**: Operacja "update or insert" - jeśli rekord istnieje to go aktualizuje, jeśli nie to tworzy nowy
 
-A simple utility function wraps the Web Speech API for easy use.
+### Synteza Mowy (Text-to-Speech)
+
+Prosta funkcja narzędziowa opakowuje Web Speech API dla łatwego użycia.
 
 ```ts
 // lib/tts.ts
@@ -322,47 +404,57 @@ export function speak(text: string, lang = 'en-US') {
 }
 ```
 
+**Wyjaśnienie działania:**
+1. Funkcja sprawdza czy tekst nie jest pusty i czy kod działa w przeglądarce (nie na serwerze)
+2. Tworzy obiekt `SpeechSynthesisUtterance` - reprezentuje tekst do wypowiedzenia
+3. Ustawia język (domyślnie angielski amerykański)
+4. Wywołuje `window.speechSynthesis.speak()` - natywne API przeglądarki syntetyzuje i wypowiada tekst
+
+**Dla początkujących:** Web Speech API jest wbudowane w nowoczesne przeglądarki. Nie wymaga żadnych zewnętrznych bibliotek czy połączenia internetowego - synteza głosu dzieje się całkowicie lokalnie w przeglądarce.
+
 
 ---
 
-## 🚀 **Getting Started - Next Steps**
+## 🚀 **Rozpoczęcie Pracy - Kolejne Kroki**
 
-### **For Users**
-1. 📖 Read the [User Guide](./docs/user-guide.md) for detailed usage instructions
-2. 🔧 Check [Troubleshooting](./docs/troubleshooting.md) if you encounter issues
-3. ⚙️ Learn about [Configuration](./docs/configuration.md) options
+### **Dla Użytkowników**
+1. 📖 Przeczytaj [Przewodnik Użytkownika](./docs/user-guide.md) aby uzyskać szczegółowe instrukcje użytkowania
+2. 🔧 Sprawdź [Rozwiązywanie Problemów](./docs/troubleshooting.md) jeśli napotkasz problemy
+3. ⚙️ Dowiedz się o opcjach [Konfiguracji](./docs/configuration.md)
 
-### **For Developers**
-1. 🛠️ Follow the [Installation Guide](./docs/installation.md) for setup
-2. 💻 Read the [Development Guide](./docs/development-guide.md) for workflows  
-3. 🏗️ Understand the [Architecture](./docs/architecture.md) design
-4. 🧩 Explore [Component Documentation](./docs/frontend-components.md)
+### **Dla Programistów**
+1. 🛠️ Postępuj zgodnie z [Przewodnikiem Instalacji](./docs/installation.md) aby skonfigurować środowisko
+2. 💻 Przeczytaj [Przewodnik Deweloperski](./docs/development-guide.md) aby poznać przepływy pracy  
+3. 🏗️ Zrozum projekt [Architektury](./docs/architecture.md)
+4. 🧩 Eksploruj [Dokumentację Komponentów](./docs/frontend-components.md)
 
-### **For Deployment**
-1. 🚀 Follow the [Deployment Guide](./docs/deployment.md) for production
-2. 🔒 Review security considerations and best practices
-3. 📊 Set up monitoring and analytics
+### **Dla Wdrożenia**
+1. 🚀 Postępuj zgodnie z [Przewodnikiem Wdrożenia](./docs/deployment.md) dla środowiska produkcyjnego
+2. 🔒 Przejrzyj kwestie bezpieczeństwa i najlepsze praktyki
+3. 📊 Skonfiguruj monitorowanie i analitykę
 
 ---
 
-## 📚 **Additional Resources**
+## 📚 **Dodatkowe Zasoby**
 
-| Category | Name & Link | Purpose |
+**Wyjaśnienie:** Poniższa tabela zawiera linki do zewnętrznych bibliotek, frameworków i zasobów edukacyjnych wykorzystywanych w projekcie Blink Speech. Każdy zasób jest opisany z perspektywy jego roli w projekcie.
+
+| Kategoria | Nazwa i Link | Cel |
 |----------|-------------|---------|
-| **Eye Tracking** | [WebGazer.js](https://webgazer.cs.brown.edu/) | Browser-based gaze tracking using webcam, works without extra hardware. |
-| **Eye Tracking** | [MediaPipe FaceLandmarker (Web)](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker/web_js) | High-fidelity facial & iris landmark detection in browser via TensorFlow.js. |
-| **Blink Detection** | [Eye Aspect Ratio (EAR) Method](https://www.pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/) | Technique for blink detection using facial landmarks and aspect ratio. |
-| **Blink Detection Example Code** | [LearnOpenCV Eye Blink Detection](https://github.com/spmallick/learnopencv/tree/master/Eye-Blink-Detection) | OpenCV + Dlib implementation of EAR blink detection. |
-| **Speech Output** | [Web Speech API (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) | Browser-native Text-to-Speech and speech recognition APIs. |
-| **Speech Output (Python)** | [gTTS – Google Text-to-Speech](https://github.com/pndurette/gTTS) | Server-side text-to-speech library in Python. |
-| **Frontend Framework** | [Next.js](https://nextjs.org/) | React framework for building full-stack web apps. |
-| **State Management** | [Zustand](https://zustand-demo.pmnd.rs/) | Lightweight state management library for React. |
-| **Styling** | [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS framework for styling. |
-| **Persistent Storage** | [localForage](https://localforage.github.io/localForage/) | Wrapper for IndexedDB, WebSQL, and localStorage for storing calibration data. |
-| **Backend & DB** | [Supabase](https://supabase.com/) | Backend-as-a-service with PostgreSQL, authentication, and serverless functions. |
-| **Real-time Communication** | [Supabase Realtime](https://supabase.com/docs/guides/realtime) | WebSocket-based real-time updates from Supabase. |
-| **Optional SMS API** | [Twilio SMS API](https://www.twilio.com/docs/sms) | Send phrases as SMS messages programmatically. |
-| **Computer Vision Library** | [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.html) | JavaScript version of OpenCV for image/video analysis. |
-| **ML Models in JS** | [TensorFlow.js](https://www.tensorflow.org/js) | Run ML models directly in the browser. |
-| **Gesture Tracking Example** | [GazeTracking (Python)](https://github.com/antoinelame/GazeTracking) | Eye movement tracking library for Python, useful for prototyping. |
+| **Śledzenie Wzroku** | [WebGazer.js](https://webgazer.cs.brown.edu/) | Śledzenie spojrzenia w przeglądarce z użyciem kamery internetowej, działa bez dodatkowego sprzętu. **Dla początkujących:** To biblioteka JavaScript, która używa uczenia maszynowego do przewidywania, gdzie użytkownik patrzy na ekran, bazując tylko na obrazie z kamery. |
+| **Śledzenie Wzroku** | [MediaPipe FaceLandmarker (Web)](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker/web_js) | Wysokiej jakości detekcja punktów charakterystycznych twarzy i tęczówki w przeglądarce przez TensorFlow.js. **Wyjaśnienie:** MediaPipe to zestaw narzędzi Google do analizy mediów. FaceLandmarker wykrywa 468 punktów 3D na twarzy w czasie rzeczywistym. |
+| **Detekcja Mrugnięć** | [Eye Aspect Ratio (EAR) Method](https://www.pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/) | Technika detekcji mrugnięć wykorzystująca punkty charakterystyczne twarzy i współczynnik proporcji. **Wyjaśnienie techniczna:** Metoda EAR została opublikowana w 2016 roku i stała się standardem w detekcji mrugnięć ze względu na prostotę i skuteczność. |
+| **Przykładowy Kod Detekcji Mrugnięć** | [LearnOpenCV Eye Blink Detection](https://github.com/spmallick/learnopencv/tree/master/Eye-Blink-Detection) | Implementacja detekcji mrugnięć EAR w OpenCV + Dlib. **Dla początkujących:** To repozytorium GitHub zawiera działający przykład kodu w Pythonie, który możesz uruchomić lokalnie aby zrozumieć koncepcję. |
+| **Wyjście Mowy** | [Web Speech API (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) | Natywne API przeglądarki do syntezy mowy (Text-to-Speech) i rozpoznawania mowy. **Wyjaśnienie:** To standardowe API dostępne we wszystkich nowoczesnych przeglądarkach – nie wymaga instalacji dodatkowych bibliotek. |
+| **Wyjście Mowy (Python)** | [gTTS – Google Text-to-Speech](https://github.com/pndurette/gTTS) | Biblioteka po stronie serwera do syntezy mowy w Pythonie. **Nota:** Nie jest używana w obecnej wersji Blink Speech (która działa całkowicie w przeglądarce), ale może być przydatna dla rozszerzeń serwerowych. |
+| **Framework Frontend** | [Next.js](https://nextjs.org/) | Framework React do budowania pełnowarstwowych aplikacji webowych. **Dla początkujących:** Next.js rozszerza React o funkcje serwerowe, routing oparty na plikach i optymalizacje wydajności. |
+| **Zarządzanie Stanem** | [Zustand](https://zustand-demo.pmnd.rs/) | Lekka biblioteka do zarządzania stanem dla React. **Wyjaśnienie:** Zustand pozwala różnym komponentom React współdzielić i synchronizować dane bez "prop drilling" (przekazywania props przez wiele poziomów). |
+| **Stylizacja** | [Tailwind CSS](https://tailwindcss.com/) | Framework CSS typu utility-first do stylizacji. **Dla początkujących:** Zamiast pisać własne klasy CSS, używasz gotowych klas jak `flex`, `text-center`, `bg-blue-500` bezpośrednio w HTML/JSX. |
+| **Przechowywanie Trwałe** | [localForage](https://localforage.github.io/localForage/) | Wrapper dla IndexedDB, WebSQL i localStorage do przechowywania danych kalibracji. **Wyjaśnienie:** localForage automatycznie wybiera najlepszą dostępną metodę przechowywania w danej przeglądarce, ukrywając złożoność API. |
+| **Backend & Baza Danych** | [Supabase](https://supabase.com/) | Backend-as-a-Service z PostgreSQL, uwierzytelnianiem i funkcjami bezserwerowymi. **Dla początkujących:** Supabase to "otwarta alternatywa dla Firebase" – zapewnia gotową bazę danych, API i uwierzytelnianie bez konieczności konfigurowania własnego serwera. |
+| **Komunikacja w Czasie Rzeczywistym** | [Supabase Realtime](https://supabase.com/docs/guides/realtime) | Aktualizacje w czasie rzeczywistym oparte na WebSocket z Supabase. **Wyjaśnienie:** Pozwala na natychmiastową synchronizację zmian w bazie danych między urządzeniami bez odświeżania strony. |
+| **Opcjonalne API SMS** | [Twilio SMS API](https://www.twilio.com/docs/sms) | Programowe wysyłanie fraz jako wiadomości SMS. **Przypadek użycia:** Użytkownik może skonfigurować wysyłanie pilnych komunikatów (np. "Pomocy!") bezpośrednio jako SMS do opiekuna. |
+| **Biblioteka Widzenia Komputerowego** | [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.html) | Wersja JavaScript OpenCV do analizy obrazu/wideo. **Wyjaśnienie:** OpenCV (Open Computer Vision) to najpopularniejsza biblioteka do przetwarzania obrazów. Wersja .js działa w przeglądarce. |
+| **Modele ML w JS** | [TensorFlow.js](https://www.tensorflow.org/js) | Uruchamianie modeli uczenia maszynowego bezpośrednio w przeglądarce. **Dla początkujących:** TensorFlow.js pozwala na inference (przewidywania) modeli AI bez wysyłania danych na serwer – wszystko dzieje się lokalnie w przeglądarce użytkownika. |
+| **Przykład Śledzenia Gestów** | [GazeTracking (Python)](https://github.com/antoinelame/GazeTracking) | Biblioteka do śledzenia ruchów oczu w Pythonie, przydatna do prototypowania. **Nota:** Napisana w Pythonie, więc nie jest bezpośrednio używana w projekcie webowym, ale doskonała do nauki koncepcji i eksperymentów. |
 

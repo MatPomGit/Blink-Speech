@@ -1,96 +1,129 @@
-# Installation Guide
+# Przewodnik Instalacji
 
-This guide will walk you through setting up Blink Speech for development and production environments.
+Ten przewodnik przeprowadzi Cię krok po kroku przez proces instalacji Blink Speech zarówno dla środowiska deweloperskiego (do nauki i tworzenia), jak i produkcyjnego (wersja końcowa dla użytkowników).
 
-## 📋 Prerequisites
+## 📋 Wymagania Wstępne
 
-### System Requirements
-- **Operating System**: Windows 10+, macOS 10.15+, Ubuntu 18.04+
-- **Node.js**: Version 18.0 or higher
-- **Browser**: Chrome 80+, Firefox 75+, Safari 13+, or Edge 80+
-- **Camera**: Webcam with minimum 720p resolution
-- **Memory**: At least 2GB RAM available
-- **Network**: HTTPS required for camera access (development server included)
+### Wymagania Systemowe
+- **System Operacyjny**: Windows 10 lub nowszy, macOS 10.15 lub nowszy, Ubuntu 18.04 lub nowszy
+- **Node.js**: Wersja 18.0 lub wyższa (środowisko uruchomieniowe JavaScript potrzebne do działania aplikacji)
+- **Przeglądarka**: Chrome 80+, Firefox 75+, Safari 13+, lub Edge 80+ (nowsze wersje zapewniają lepszą obsługę kamery i technologii webowych)
+- **Kamera**: Kamera internetowa z rozdzielczością minimum 720p (wyższa rozdzielczość = lepsza dokładność detekcji)
+- **Pamięć RAM**: Co najmniej 2GB dostępnej pamięci (aplikacja przetwarza obraz z kamery w czasie rzeczywistym)
+- **Sieć**: HTTPS wymagane dla dostępu do kamery (serwer deweloperski ma wbudowaną obsługę HTTPS)
 
-### Required Tools
-- **Git**: Version control system
-- **Package Manager**: npm, yarn, or pnpm (pnpm recommended)
-- **Code Editor**: VS Code recommended with extensions:
-  - TypeScript and JavaScript Language Features
-  - Tailwind CSS IntelliSense
-  - ES7+ React/Redux/React-Native snippets
+### Wymagane Narzędzia
+- **Git**: System kontroli wersji (służy do pobierania i zarządzania kodem projektu)
+- **Menedżer Pakietów**: npm, yarn, lub pnpm (pnpm zalecany - szybszy i oszczędniejszy w użyciu dysku)
+- **Edytor Kodu**: VS Code zalecany z rozszerzeniami:
+  - TypeScript and JavaScript Language Features (wsparcie dla języka TypeScript)
+  - Tailwind CSS IntelliSense (autouzupełnianie dla stylów CSS)
+  - ES7+ React/Redux/React-Native snippets (skróty dla kodu React)
 
-## 🚀 Quick Start
+## 🚀 Szybki Start
 
-### 1. Clone the Repository
+### 1. Sklonuj Repozytorium
+**Co to robi:** Pobiera całą kopię projektu z GitHub na Twój komputer, tworząc lokalną wersję do pracy.
+
 ```bash
 git clone https://github.com/akshad-exe/Blink-Speech.git
 cd Blink-Speech
 ```
 
-### 2. Install Dependencies
+**Wyjaśnienie kroków:**
+- `git clone` - pobiera projekt z internetu
+- `cd Blink-Speech` - przechodzi do folderu z projektem (cd = change directory)
 
-#### Frontend Setup
+### 2. Instalacja Zależności
+
+**Co to są zależności?** To zewnętrzne biblioteki i narzędzia, których projekt potrzebuje do działania (np. React, TypeScript, biblioteki do rozpoznawania obrazu).
+
+#### Konfiguracja Frontendu
+**Frontend** to część aplikacji, którą widzi użytkownik w przeglądarce (interfejs, wizualizacje, interakcje).
+
 ```bash
 cd frontend
 pnpm install
-# or
+# lub (jeśli nie masz pnpm)
 npm install
-# or
+# lub (jeśli używasz yarn)
 yarn install
 ```
 
-#### Backend Setup
+**Co się dzieje:** Menedżer pakietów czyta plik `package.json`, pobiera wszystkie wymagane biblioteki i zapisuje je w folderze `node_modules`.
+
+#### Konfiguracja Backendu
+**Backend** to część serwerowa aplikacji (API, baza danych, logika biznesowa).
+
 ```bash
 cd ../backend
 pnpm install
-# or
+# lub
 npm install
-# or
+# lub
 yarn install
 ```
 
-### 3. Environment Configuration
+**Wskazówka:** `../backend` oznacza "wyjdź z obecnego folderu i wejdź do folderu backend".
 
-#### Frontend Environment Variables
-Create `frontend/.env.local`:
+### 3. Konfiguracja Środowiska
+
+**Co to są zmienne środowiskowe?** To ustawienia i klucze dostępu, które aplikacja potrzebuje, ale nie powinny być publicznie widoczne w kodzie (np. hasła do bazy danych, klucze API).
+
+#### Zmienne Środowiskowe dla Frontendu
+Utwórz plik `frontend/.env.local` i wpisz następującą zawartość:
+
+**Co to robi:** Konfiguruje połączenie z bazą danych Supabase i podstawowe ustawienia aplikacji.
+
 ```env
-# Supabase Configuration
+# Konfiguracja Supabase (baza danych w chmurze)
 VITE_SUPABASE_URL=your_supabase_project_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-# Optional: Analytics and monitoring
+# Opcjonalnie: Analityka i monitoring (śledzenie wersji i środowiska)
 VITE_APP_VERSION=1.0.0
 VITE_APP_ENVIRONMENT=development
 ```
 
-#### Backend Environment Variables
-Create `backend/.env`:
+**Gdzie znaleźć te wartości?** Znajdziesz je w panelu Supabase → Settings → API (krok 4 opisuje to szczegółowo).
+
+#### Zmienne Środowiskowe dla Backendu
+Utwórz plik `backend/.env`:
+
+**Co to robi:** Konfiguruje serwer, bazę danych oraz opcjonalnie usługę SMS (Twilio).
+
 ```env
-# Supabase Configuration
+# Konfiguracja Supabase
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
 
-# Twilio SMS Configuration (Optional)
+# Konfiguracja Twilio SMS (Opcjonalnie - do wysyłania powiadomień SMS)
 TWILIO_ACCOUNT_SID=your_twilio_account_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
 TWILIO_PHONE_NUMBER=your_twilio_phone_number
 
-# Development Configuration
+# Konfiguracja Deweloperska
 NODE_ENV=development
 PORT=3001
 ```
 
-### 4. Database Setup
+**Uwaga:** `SERVICE_ROLE_KEY` to specjalny klucz z pełnymi uprawnieniami - nigdy nie udostępniaj go publicznie!
 
-#### Supabase Configuration
-1. Create a new project at [supabase.com](https://supabase.com)
-2. Go to Settings → API to find your URL and keys
-3. Execute the following SQL in the SQL Editor:
+### 4. Konfiguracja Bazy Danych
+
+#### Konfiguracja Supabase
+**Co to jest Supabase?** To platforma bazy danych PostgreSQL w chmurze z gotowymi narzędziami do autoryzacji, storage i API.
+
+**Kroki:**
+1. Załóż nowy projekt na [supabase.com](https://supabase.com) (rejestracja jest darmowa)
+2. Przejdź do Settings → API, aby znaleźć swój URL i klucze dostępu
+3. Wykonaj poniższy kod SQL w SQL Editor (zakładka "SQL Editor" w panelu Supabase):
+
+**Co robi ten kod SQL:** Tworzy tabelę `patterns` do przechowywania mapowań gestów na komendy, wraz z indeksami dla szybszego wyszukiwania i automatycznymi timestampami.
 
 ```sql
--- Create patterns table for gesture mappings
+-- Tworzenie tabeli 'patterns' dla mapowań gestów
 CREATE TABLE patterns (
     sid TEXT PRIMARY KEY,
     mapping JSONB NOT NULL,
@@ -98,17 +131,21 @@ CREATE TABLE patterns (
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Create an index for better query performance
+-- Tworzenie indeksu dla lepszej wydajności zapytań
+-- (indeks przyspiesza wyszukiwanie rekordów w bazie)
 CREATE INDEX idx_patterns_sid ON patterns(sid);
 
--- Enable Row Level Security (optional but recommended)
+-- Włączanie Row Level Security (opcjonalne, ale zalecane dla bezpieczeństwa)
+-- (RLS kontroluje, kto może odczytywać/modyfikować dane)
 ALTER TABLE patterns ENABLE ROW LEVEL SECURITY;
 
--- Create a policy for anonymous access (adjust as needed)
+-- Tworzenie polityki dla anonimowego dostępu (dostosuj według potrzeb)
+-- (ta polityka pozwala wszystkim na dostęp - w produkcji warto to ograniczyć)
 CREATE POLICY "Allow anonymous access" ON patterns
     FOR ALL USING (true);
 
--- Create a function to automatically update updated_at
+-- Tworzenie funkcji do automatycznej aktualizacji pola 'updated_at'
+-- (funkcja trigger - automatycznie ustawia datę modyfikacji przy każdej zmianie)
 CREATE OR REPLACE FUNCTION update_updated_at_column()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -117,49 +154,91 @@ BEGIN
 END;
 $$ language 'plpgsql';
 
--- Create trigger to auto-update timestamps
+-- Tworzenie triggera do automatycznej aktualizacji timestampów
+-- (trigger uruchamia funkcję przed każdą aktualizacją rekordu)
 CREATE TRIGGER update_patterns_updated_at 
     BEFORE UPDATE ON patterns 
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 ```
 
-### 5. Start Development Servers
+**Wyjaśnienie struktury tabeli:**
+- `sid` (TEXT) - unikalny identyfikator sesji użytkownika
+- `mapping` (JSONB) - przechowuje mapowanie gestów w formacie JSON
+- `created_at` - data utworzenia rekordu (automatyczna)
+- `updated_at` - data ostatniej modyfikacji (automatycznie aktualizowana)
 
-#### Terminal 1 - Frontend Server
+### 5. Uruchomienie Serwerów Deweloperskich
+
+**Co to jest serwer deweloperski?** To lokalna aplikacja, która uruchamia Twój projekt na komputerze, automatycznie odświeża zmiany i pokazuje błędy w czasie rzeczywistym.
+
+**Ważne:** Potrzebujesz dwóch osobnych terminali (okien konsoli), ponieważ frontend i backend działają równocześnie jako osobne procesy.
+
+#### Terminal 1 - Serwer Frontendu
+Otwórz pierwsze okno terminala i wykonaj:
+
 ```bash
 cd frontend
 pnpm dev
-# or
+# lub
 npm run dev
-# or
+# lub
 yarn dev
 ```
-The frontend will be available at `https://localhost:5173`
 
-#### Terminal 2 - Backend Server
+**Co się dzieje:** Uruchamia serwer Vite, który kompiluje kod React i udostępnia aplikację w przeglądarce.
+
+Frontend będzie dostępny pod adresem `https://localhost:5173`
+
+#### Terminal 2 - Serwer Backendu
+Otwórz drugie okno terminala i wykonaj:
+
 ```bash
 cd backend
 pnpm dev
-# or
+# lub
 npm run dev
-# or
+# lub
 yarn dev
 ```
-The backend API will be available at `http://localhost:3001`
 
-### 6. Verify Installation
+**Co się dzieje:** Uruchamia serwer Next.js, który obsługuje API i komunikację z bazą danych.
 
-1. **Open your browser** to `https://localhost:5173`
-2. **Allow camera permissions** when prompted
-3. **Complete the calibration** process
-4. **Test gesture detection** in the session interface
+Backend API będzie dostępne pod adresem `http://localhost:3001`
 
-## 🔧 Development Setup
+**Wskazówka dla początkujących:** 
+- `localhost` to adres Twojego własnego komputera
+- Numery portów (5173, 3001) to "adresy" różnych aplikacji na tym samym komputerze
+- Nie zamykaj tych okien terminala - serwery muszą działać podczas pracy z aplikacją
 
-### IDE Configuration
+### 6. Weryfikacja Instalacji
 
-#### VS Code Settings
-Create `.vscode/settings.json` in the project root:
+**Sprawdź, czy wszystko działa poprawnie:**
+
+1. **Otwórz przeglądarkę** i wejdź na `https://localhost:5173`
+   - Powinieneś zobaczyć interfejs aplikacji Blink Speech
+
+2. **Zezwól na dostęp do kamery** gdy przeglądarka o to poprosi
+   - To jest niezbędne, aby aplikacja mogła rozpoznawać gesty i ruchy oczu
+   - Możesz zmienić te uprawnienia w ustawieniach przeglądarki
+
+3. **Ukończ proces kalibracji** (kalibracja = dostosowanie systemu do Twoich ruchów)
+   - Aplikacja nauczy się rozpoznawać Twoje specyficzne gesty i spojrzenia
+   - To jednorazowy proces przy pierwszym uruchomieniu
+
+4. **Przetestuj detekcję gestów** w interfejsie sesji
+   - Spróbuj wykonać różne gesty i sprawdź, czy są wykrywane
+   - Sprawdź, czy kamera prawidłowo śledzi ruchy Twoich oczu
+
+**Jeśli wszystko działa - gratulacje! 🎉 Instalacja zakończona pomyślnie.**
+
+## 🔧 Konfiguracja Środowiska Deweloperskiego
+
+### Konfiguracja IDE (Zintegrowanego Środowiska Programistycznego)
+
+#### Ustawienia VS Code
+**Co to robi:** Automatyzuje formatowanie kodu i włącza pomocne funkcje edytora.
+
+Utwórz plik `.vscode/settings.json` w katalogu głównym projektu:
 ```json
 {
   "typescript.preferences.includePackageJsonAutoImports": "auto",
@@ -237,32 +316,38 @@ VITE_LOG_LEVEL=error
 VITE_ENABLE_DEVTOOLS=false
 ```
 
-## 🌐 Production Deployment
+## 🌐 Wdrożenie Produkcyjne
 
-### Frontend Deployment (Vercel)
+### Wdrożenie Frontendu (Vercel)
 
-1. **Build the project**:
+**Co to jest wdrożenie?** Publikacja aplikacji w internecie, aby inni mogli z niej korzystać.
+
+1. **Zbuduj projekt** (stwórz zoptymalizowaną wersję do publikacji):
 ```bash
 cd frontend
 pnpm build
 ```
+**Co się dzieje:** Vite kompiluje i optymalizuje cały kod do folderu `dist` - gotowa wersja do publikacji.
 
-2. **Deploy to Vercel**:
+2. **Wdróż na Vercel** (platforma hostingowa):
 ```bash
-# Install Vercel CLI
+# Instalacja Vercel CLI (narzędzie linii poleceń)
 npm i -g vercel
 
-# Deploy
+# Wdrożenie (publikacja w internecie)
 vercel --prod
 ```
+**Co się dzieje:** Vercel przesyła Twój projekt na swoje serwery i przypisuje mu publiczny adres URL.
 
-3. **Configure environment variables** in Vercel dashboard:
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
+3. **Skonfiguruj zmienne środowiskowe** w panelu Vercel (Dashboard):
+   - `VITE_SUPABASE_URL` - adres Twojej bazy danych
+   - `VITE_SUPABASE_ANON_KEY` - klucz dostępu publicznego
 
-### Backend Deployment (Vercel Functions)
+### Wdrożenie Backendu (Vercel Functions)
 
-1. **Configure vercel.json** in backend directory:
+**Vercel Functions:** Funkcje serverless - kod uruchamiany tylko gdy ktoś wysyła zapytanie (oszczędza zasoby).
+
+1. **Skonfiguruj plik vercel.json** w katalogu backend:
 ```json
 {
   "functions": {
@@ -279,15 +364,17 @@ vercel --prod
 }
 ```
 
-2. **Deploy**:
+2. **Wdróż backend**:
 ```bash
 cd backend
 vercel --prod
 ```
 
-### Alternative: Docker Deployment
+### Alternatywa: Wdrożenie z Docker
 
-#### Dockerfile for Frontend
+**Co to jest Docker?** Technologia konteneryzacji - pakuje aplikację ze wszystkimi zależnościami w jeden "kontener", który działa wszędzie identycznie.
+
+#### Dockerfile dla Frontendu
 ```dockerfile
 # frontend/Dockerfile
 FROM node:18-alpine AS builder
@@ -308,6 +395,8 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 
 #### Docker Compose
+**Co to jest Docker Compose?** Narzędzie do uruchamiania wielu kontenerów (frontend + backend) jednocześnie.
+
 ```yaml
 version: '3.8'
 services:
@@ -333,83 +422,91 @@ services:
       - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
 ```
 
-## 🔍 Troubleshooting
+## 🔍 Rozwiązywanie Problemów
 
-### Common Issues
+### Najczęstsze Problemy
 
-#### Camera Access Denied
-**Problem**: Browser denies camera access
-**Solution**: 
-- Ensure you're accessing via HTTPS (or localhost)
-- Check browser permissions in Settings
-- Try a different browser
+#### Brak Dostępu do Kamery
+**Problem:** Przeglądarka blokuje dostęp do kamery
+**Rozwiązanie:** 
+- Upewnij się, że używasz HTTPS (lub localhost) - kamery nie działają przez HTTP
+- Sprawdź uprawnienia przeglądarki w Ustawieniach → Prywatność → Kamera
+- Spróbuj innej przeglądarki (Chrome zwykle najlepiej obsługuje kamery)
 
-#### MediaPipe Model Loading Failed
-**Problem**: TensorFlow.js models fail to load
-**Solution**:
+#### Błąd Ładowania Modeli MediaPipe
+**Problem:** Nie udaje się załadować modeli TensorFlow.js
+**Przyczyna:** Brak połączenia z internetem lub blokada przez przeglądarkę
+**Rozwiązanie:**
 ```bash
-# Clear browser cache
-# Check network connectivity
-# Verify HTTPS is enabled
+# Wyczyść pamięć podręczną przeglądarki (cache)
+# Sprawdź połączenie internetowe
+# Upewnij się, że HTTPS jest włączone
 ```
 
-#### Build Errors
-**Problem**: TypeScript compilation errors
-**Solution**:
+#### Błędy Kompilacji
+**Problem:** TypeScript zgłasza błędy podczas budowania
+**Rozwiązanie:**
 ```bash
-# Clear node_modules and reinstall
+# Usuń node_modules i przeinstaluj zależności (często pomaga)
 rm -rf node_modules package-lock.json
 npm install
 
-# Check TypeScript version
+# Sprawdź wersję TypeScript (powinna być zgodna z wymaganiami)
 npx tsc --version
 
-# Regenerate types
+# Ponownie zbuduj projekt
 npm run build
 ```
+**Wyjaśnienie:** `rm -rf` usuwa katalog, reinstalacja pobiera świeże pakiety.
 
-#### WebGazer Initialization Failed
-**Problem**: Gaze tracking doesn't work
-**Solution**:
-- Ensure good lighting conditions
-- Check camera quality and positioning
-- Allow sufficient initialization time
+#### Błąd Inicjalizacji WebGazer
+**Problem:** Śledzenie wzroku nie działa
+**Rozwiązanie:**
+- Zapewnij dobre oświetlenie (jasne światło, bez odbić)
+- Sprawdź jakość kamery i jej pozycję (kamera powinna być na poziomie oczu)
+- Zaczekaj 10-15 sekund na inicjalizację systemu
 
-### Performance Issues
+### Problemy z Wydajnością
 
-#### High CPU Usage
-- Reduce video resolution in `getUserMedia` constraints
-- Adjust detection frequency in `useGestureSpeech` hook
-- Close other browser tabs during usage
+#### Wysokie Użycie Procesora (CPU)
+**Co robić:**
+- Zmniejsz rozdzielczość wideo w ustawieniach `getUserMedia` (niższa jakość = mniej obliczeń)
+- Dostosuj częstotliwość detekcji w hooku `useGestureSpeech` (rzadsze sprawdzanie = mniej pracy)
+- Zamknij inne karty przeglądarki podczas korzystania z aplikacji
 
-#### Memory Leaks
-- Ensure proper cleanup in `useEffect` hooks
-- Stop video streams on component unmount
-- Monitor browser dev tools memory tab
+#### Wycieki Pamięci (Memory Leaks)
+**Co to są wycieki pamięci?** Program zajmuje coraz więcej pamięci RAM i jej nie zwalnia.
+**Jak naprawić:**
+- Upewnij się, że hooków `useEffect` mają funkcje czyszczące (cleanup)
+- Zatrzymuj strumienie wideo przy odmontowywaniu komponentu
+- Monitoruj kartę Memory w narzędziach deweloperskich przeglądarki
 
-### Development Tips
+### Porady dla Developerów
 
-1. **Enable verbose logging**:
+1. **Włącz szczegółowe logowanie** (aby widzieć więcej informacji diagnostycznych):
 ```typescript
-// Add to your .env.development
+// Dodaj do pliku .env.development
 VITE_LOG_LEVEL=debug
 ```
+**Co to robi:** Wyświetla wszystkie komunikaty debugowania w konsoli przeglądarki.
 
-2. **Test with different cameras**:
-- Built-in laptop cameras
-- External USB webcams
-- Different resolutions and frame rates
+2. **Testuj z różnymi kamerami:**
+- Wbudowane kamery laptopów (często niższa jakość)
+- Zewnętrzne kamery USB (lepsza jakość, ale różne sterowniki)
+- Różne rozdzielczości i liczby klatek na sekundę (fps)
 
-3. **Profile performance**:
+3. **Profiluj wydajność** (sprawdzaj, co zużywa zasoby):
 ```bash
-# Use React DevTools Profiler
-# Monitor TensorFlow.js performance
-# Check WebGazer accuracy
+# Użyj React DevTools Profiler (sprawdza renderowanie komponentów)
+# Monitoruj wydajność TensorFlow.js (ile czasu zajmuje detekcja)
+# Sprawdź dokładność WebGazer (jak precyzyjnie śledzi wzrok)
 ```
 
-## 📦 Package Scripts
+## 📦 Skrypty Pakietów
 
-### Frontend Scripts
+**Co to są skrypty?** Gotowe polecenia zdefiniowane w `package.json`, które możesz uruchomić przez `npm run [nazwa_skryptu]`.
+
+### Skrypty Frontendu
 ```json
 {
   "dev": "vite",
@@ -421,7 +518,15 @@ VITE_LOG_LEVEL=debug
 }
 ```
 
-### Backend Scripts
+**Wyjaśnienie poszczególnych skryptów:**
+- `dev` - uruchamia serwer deweloperski z hot-reload (automatyczne odświeżanie)
+- `build` - tworzy zoptymalizowaną wersję produkcyjną
+- `build:dev` - buduje wersję z debugowaniem
+- `lint` - sprawdza kod pod kątem błędów i złych praktyk
+- `preview` - podgląd zbudowanej wersji przed wdrożeniem
+- `type-check` - sprawdza typy TypeScript bez kompilacji
+
+### Skrypty Backendu
 ```json
 {
   "dev": "next dev",
@@ -431,21 +536,50 @@ VITE_LOG_LEVEL=debug
 }
 ```
 
-## 🔒 Security Considerations
+**Wyjaśnienie:**
+- `dev` - uruchamia serwer Next.js w trybie deweloperskim
+- `build` - kompiluje aplikację do produkcji
+- `start` - uruchamia skompilowaną aplikację produkcyjną
+- `lint` - analizuje kod pod kątem problemów
 
-### Development Security
-- Never commit `.env` files to version control
-- Use different API keys for development and production
-- Implement proper CORS policies
-- Enable HTTPS in development environment
+## 🔒 Kwestie Bezpieczeństwa
 
-### Production Security
-- Configure proper environment variables
-- Enable security headers
-- Implement rate limiting
-- Use HTTPS certificates
-- Regular security audits
+**Dlaczego bezpieczeństwo jest ważne?** Złe praktyki mogą prowadzić do wycieku danych, hakowania lub kradzieży kluczy API.
+
+### Bezpieczeństwo podczas Deweloperki
+
+**Najważniejsze zasady:**
+- **NIGDY** nie commituj plików `.env` do systemu kontroli wersji (Git)
+  - *Dlaczego?* Pliki `.env` zawierają hasła i klucze - jeśli wrzucisz je na GitHub, każdy może je zobaczyć!
+  - *Jak się zabezpieczyć?* Dodaj `.env` do pliku `.gitignore`
+
+- **Używaj różnych kluczy API** dla deweloperki i produkcji
+  - *Dlaczego?* Jeśli klucz deweloperski wycieknie, produkcja pozostaje bezpieczna
+
+- **Implementuj właściwe polityki CORS** (Cross-Origin Resource Sharing)
+  - *Co to jest CORS?* Mechanizm kontrolujący, które strony mogą komunikować się z Twoim API
+  - *Dlaczego?* Zapobiega atakom z obcych domen
+
+- **Włącz HTTPS w środowisku deweloperskim**
+  - *Dlaczego?* Niektóre API (jak kamera) działają tylko przez HTTPS
+
+### Bezpieczeństwo w Produkcji
+
+**Lista kontrolna przed publikacją:**
+- ✅ Skonfiguruj zmienne środowiskowe bezpiecznie (przez panel hostingu, nie w kodzie)
+- ✅ Włącz nagłówki bezpieczeństwa (security headers) - chronią przed atakami XSS, clickjacking
+- ✅ Implementuj rate limiting - ogranicza liczbę zapytań, zapobiega atakom DDoS
+- ✅ Używaj certyfikatów HTTPS - szyfruje komunikację między użytkownikiem a serwerem
+- ✅ Przeprowadzaj regularne audyty bezpieczeństwa - sprawdzaj biblioteki pod kątem luk
+
+**Dodatkowe wskazówki:**
+- Aktualizuj regularnie zależności (`npm update`)
+- Używaj `npm audit` do sprawdzania znanych luk bezpieczeństwa
+- Nie wystawiaj wrażliwych endpointów publicznie
+- Loguj podejrzane aktywności
 
 ---
 
-You're now ready to start developing with Blink Speech! Check the [Development Guide](./development-guide.md) for detailed development workflows and best practices.
+**Gratulacje! 🎉** Jesteś teraz gotowy do rozpoczęcia pracy z Blink Speech! 
+
+Sprawdź [Development Guide](./development-guide.md) po szczegółowe instrukcje dotyczące procesu deweloperskiego i najlepszych praktyk.
