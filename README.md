@@ -1,17 +1,19 @@
 # Blink Speech
 
-> **Turning blinks and gaze into voice – communication without boundaries.**
+> **Zamieniamy mrugnięcia i spojrzenia w głos – komunikacja bez granic.**
 
-Blink Speech is a revolutionary browser-based assistive communication application that transforms eye blink patterns and gaze gestures into spoken phrases using advanced computer vision and speech synthesis. Built with modern web technologies, it operates entirely client-side to ensure maximum privacy and accessibility.
+Blink Speech to rewolucyjna aplikacja wspomagająca komunikację, działająca w przeglądarce internetowej. Przekształca ona wzorce mrugnięć oczu i gesty spojrzenia w wypowiadane frazy, wykorzystując zaawansowane techniki widzenia komputerowego (computer vision) i syntezy mowy. Zbudowana przy użyciu nowoczesnych technologii webowych, działa w całości po stronie klienta (w przeglądarce użytkownika), zapewniając maksymalną prywatność i dostępność.
 
-[![Demo Video](https://img.shields.io/badge/�_Demo-Watch_Video-brightgreen?style=for-the-badge)](https://youtu.be/evakcT6qGRI)
-[![Documentation](https://img.shields.io/badge/📚_Documentation-Read_Docs-blue?style=for-the-badge)](./docs/README.md)
-[![Live Site](https://img.shields.io/badge/🌐_Live_Site-Open_App-brightgreen?style=for-the-badge)](https://blink-speech.vercel.app)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
+**Dla początkujących:** Jeśli po raz pierwszy spotykasz się z tego typu technologią, nie martw się! Ta aplikacja nie wymaga żadnej instalacji - wystarczy przeglądarka internetowa. Wszystko działa lokalnie na Twoim komputerze, co oznacza, że Twoje nagrania z kamery nigdy nie są wysyłane do internetu.
+
+[![Demo Video](https://img.shields.io/badge/�_Demo-Obejrzyj_Film-brightgreen?style=for-the-badge)](https://youtu.be/evakcT6qGRI)
+[![Documentation](https://img.shields.io/badge/📚_Dokumentacja-Czytaj_Docs-blue?style=for-the-badge)](./docs/README.md)
+[![Live Site](https://img.shields.io/badge/🌐_Wersja_Live-Otwórz_App-brightgreen?style=for-the-badge)](https://blink-speech.vercel.app)
+[![License](https://img.shields.io/badge/Licencja-MIT-yellow?style=for-the-badge)](./LICENSE)
 
 ---
 
-## 📊 **Project Stats**
+## 📊 **Statystyki Projektu**
 
 ![GitHub stars](https://img.shields.io/github/stars/akshad-exe/Blink-Speech?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/akshad-exe/Blink-Speech?style=social)
@@ -22,18 +24,29 @@ Blink Speech is a revolutionary browser-based assistive communication applicatio
 
 ---
 
-## ✨ **Key Features**
+## ✨ **Kluczowe Funkcje**
 
-🎯 **Real-time Gesture Recognition** - Advanced computer vision detects blinks and gaze directions  
-🗣️ **Natural Speech Synthesis** - High-quality text-to-speech using Web Speech API  
-🎨 **Fully Customizable** - Create your own gesture-to-phrase mappings  
-🔒 **Privacy-First** - All processing happens locally, no video data transmitted  
-⚡ **Zero Installation** - Runs in any modern web browser with HTTPS  
-♿ **Accessibility-Focused** - Designed for users with motor impairments and speech limitations  
-🌍 **Multi-language Support** - Works with any language or custom phrases  
-📱 **Cross-Platform** - Compatible with desktop, tablet, and mobile devices  
+**Dla początkujących:** Poniżej przedstawiamy główne możliwości aplikacji w prostym języku:
 
-## 🛠️ **Technology Stack**
+🎯 **Rozpoznawanie Gestów w Czasie Rzeczywistym** - Zaawansowane widzenie komputerowe wykrywa mrugnięcia i kierunki spojrzenia. Oznacza to, że kamera analizuje ruchy Twoich oczu natychmiast, bez żadnych opóźnień.
+
+🗣️ **Naturalna Synteza Mowy** - Wysoka jakość przekształcania tekstu na mowę za pomocą Web Speech API. Twoje frazy są wypowiadane naturalnym, ludzkim głosem przez przeglądarkę.
+
+🎨 **W Pełni Konfigurowalna** - Twórz własne mapowania gestów na frazy. Możesz samodzielnie określić, co ma być wypowiedziane po konkretnym mrugnięciu lub spojrzeniu.
+
+🔒 **Prywatność Na Pierwszym Miejscu** - Całe przetwarzanie odbywa się lokalnie, żadne dane wideo nie są przesyłane przez internet. Twoja kamera działa tylko na Twoim urządzeniu.
+
+⚡ **Zero Instalacji** - Działa w każdej nowoczesnej przeglądarce z HTTPS. Nie musisz nic pobierać ani instalować - wystarczy odwiedzić stronę.
+
+♿ **Skupienie na Dostępności** - Zaprojektowane dla użytkowników z niepełnosprawnościami ruchowymi i ograniczeniami mowy.
+
+🌍 **Wsparcie Wielu Języków** - Działa z dowolnym językiem lub niestandardowymi frazami. Możesz używać polskiego, angielskiego lub dowolnego innego języka.
+
+📱 **Wieloplatformowa** - Kompatybilna z komputerami stacjonarnymi, tabletami i urządzeniami mobilnymi.  
+
+## 🛠️ **Stos Technologiczny**
+
+**Dla początkujących:** Poniżej znajdziesz listę technologii (narzędzi programistycznych) użytych do stworzenia tej aplikacji. Jeśli dopiero uczysz się programowania, nie musisz znać wszystkich z nich - są to zaawansowane narzędzia, które zostały połączone, aby stworzyć działającą aplikację.
 
 ![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -49,70 +62,76 @@ Blink Speech is a revolutionary browser-based assistive communication applicatio
 
 ---
 
-## 🌍 **Vision & Impact**
+## 🌍 **Wizja i Wpływ**
 
-### **Everyone Deserves a Voice**
+### **Każdy Zasługuje na Głos**
 
-Blink Speech was born from a simple yet powerful belief: **communication is a fundamental human right**. By transforming natural eye movements into spoken words, we're breaking down barriers that prevent people from expressing their thoughts, needs, and emotions.
+Blink Speech narodził się z prostego, ale potężnego przekonania: **komunikacja jest fundamentalnym prawem człowieka**. Przekształcając naturalne ruchy oczu w wypowiadane słowa, przełamujemy bariery, które uniemożliwiają ludziom wyrażanie swoich myśli, potrzeb i emocji.
 
-### **Who We Help**
+**Dla początkujących:** To nie jest tylko aplikacja technologiczna - to narzędzie, które może przywrócić głos osobom, które go straciły lub nigdy nie mogły swobodnie się komunikować.
 
-🏥 **Healthcare Patients**
-- ICU patients who cannot speak due to intubation
-- Post-surgery recovery when vocal communication is difficult
-- Individuals with locked-in syndrome or severe paralysis
-- Emergency communication when traditional methods fail
+### **Komu Pomagamy**
 
-♿ **People with Disabilities**
-- ALS (Lou Gehrig's disease) patients as speech deteriorates
-- Individuals with muscular dystrophy or cerebral palsy
-- Stroke survivors during speech therapy recovery
-- Anyone with motor impairments affecting traditional communication
+🏥 **Pacjenci Służby Zdrowia**
+- Pacjenci OIT (oddziału intensywnej terapii), którzy nie mogą mówić z powodu intubacji
+- Rekonwalescencja po operacji, gdy komunikacja werbalna jest utrudniona
+- Osoby z zespołem zamknięcia (locked-in syndrome) lub ciężkim porażeniem
+- Komunikacja w sytuacjach awaryjnych, gdy tradycyjne metody zawodzą
 
-⏰ **Temporary Conditions**
-- Recovery from oral or throat surgery
-- Severe laryngitis or vocal cord issues
-- Medication side effects affecting speech
-- Fatigue-related communication difficulties
+♿ **Osoby z Niepełnosprawnościami**
+- Pacjenci z ALS (stwardnienie zanikowe boczne) w miarę pogorszenia mowy
+- Osoby z dystrofią mięśniową lub porażeniem mózgowym
+- Osoby po udarze w trakcie rehabilitacji mowy
+- Każdy z upośledzeniami motorycznymi wpływającymi na tradycyjną komunikację
 
-🌍 **Global Accessibility**
-- Works in any language or cultural context
-- No specialized hardware or expensive equipment required
-- Runs on existing devices (computers, tablets, phones)
-- Free and open-source for maximum accessibility
+⏰ **Stany Przejściowe**
+- Rekonwalescencja po operacjach jamy ustnej lub gardła
+- Ciężkie zapalenie krtani lub problemy ze strunami głosowymi
+- Skutki uboczne leków wpływające na mowę
+- Trudności komunikacyjne związane ze zmęczeniem
+
+🌍 **Globalna Dostępność**
+- Działa w dowolnym języku i kontekście kulturowym
+- Nie wymaga specjalistycznego sprzętu ani drogiego wyposażenia
+- Uruchamia się na istniejących urządzeniach (komputery, tablety, telefony)
+- Darmowy i otwartoźródłowy dla maksymalnej dostępności
 
 ---
 
-## 🚀 **Quick Start**
+## 🚀 **Szybki Start**
 
-### **For Users**
-1. **📱 Try the Demo Video**: [YouTube Demo](https://youtu.be/evakcT6qGRI)
-2. **📖 Read the User Guide**: [Complete usage instructions](./docs/user-guide.md)
-3. **🎯 Complete Calibration**: Follow the 5-point setup for optimal accuracy
-4. **🗣️ Start Communicating**: Use blinks and gaze to speak!
+**Dla początkujących:** Poniżej znajdziesz instrukcje zarówno dla użytkowników (którzy chcą tylko korzystać z aplikacji), jak i dla programistów (którzy chcą ją rozwijać).
 
-### **For Developers**
-1. **📥 Clone the Repository**
+### **Dla Użytkowników**
+1. **📱 Obejrzyj Film Demo**: [YouTube Demo](https://youtu.be/evakcT6qGRI)
+2. **📖 Przeczytaj Instrukcję Użytkownika**: [Pełna instrukcja użytkowania](./docs/user-guide.md)
+3. **🎯 Ukończ Kalibrację**: Postępuj zgodnie z 5-punktową konfiguracją dla optymalnej dokładności
+4. **🗣️ Zacznij Komunikować się**: Używaj mrugnięć i spojrzeń, aby mówić!
+
+### **Dla Programistów**
+**Dla początkujących:** Jeśli uczysz się programowania, poniższe kroki pomogą Ci uruchomić projekt na własnym komputerze. Nie martw się, jeśli coś jest niejasne - szczegółowa dokumentacja znajduje się w linkach poniżej.
+
+1. **📥 Sklonuj Repozytorium**
    ```bash
    git clone https://github.com/akshad-exe/Blink-Speech.git
    cd Blink-Speech
    ```
 
-2. **⚙️ Install Dependencies**
+2. **⚙️ Zainstaluj Zależności**
    ```bash
-   # Frontend
+   # Frontend (część działająca w przeglądarce)
    cd frontend && npm install
    
-   # Backend
+   # Backend (serwer)
    cd ../backend && npm install
    ```
 
-3. **🔧 Configure Environment**
-   - Set up [Supabase](https://supabase.com) project
-   - Copy `.env.example` files and configure variables
-   - See [Installation Guide](./docs/installation.md) for details
+3. **🔧 Skonfiguruj Środowisko**
+   - Załóż projekt w [Supabase](https://supabase.com) (darmowa baza danych w chmurze)
+   - Skopiuj pliki `.env.example` i skonfiguruj zmienne środowiskowe
+   - Zobacz [Przewodnik Instalacji](./docs/installation.md) po szczegóły
 
-4. **🎬 Run Development Servers**
+4. **🎬 Uruchom Serwery Deweloperskie**
    ```bash
    # Terminal 1 - Frontend (https://localhost:5173)
    cd frontend && npm run dev
@@ -123,249 +142,265 @@ Blink Speech was born from a simple yet powerful belief: **communication is a fu
 
 ---
 
-## 📚 **Complete Documentation**
+## 📚 **Pełna Dokumentacja**
 
-### **📖 User Documentation**
-- [📋 **User Guide**](./docs/user-guide.md) - How to use Blink Speech effectively
-- [🔧 **Troubleshooting**](./docs/troubleshooting.md) - Solve common issues
-- [⚙️ **Configuration**](./docs/configuration.md) - Customize settings and preferences
+**Dla początkujących:** Poniżej znajdziesz wszystkie przewodniki i instrukcje. Zacznij od Instrukcji Użytkownika, jeśli chcesz tylko korzystać z aplikacji, lub od Przewodnika Instalacji, jeśli chcesz ją rozwijać.
 
-### **🏗️ Technical Documentation**
-- [🛠️ **Installation Guide**](./docs/installation.md) - Development and production setup
-- [🏛️ **Architecture Overview**](./docs/architecture.md) - System design and data flow
-- [💻 **Development Guide**](./docs/development-guide.md) - Contributing and best practices
-- [🧩 **Frontend Components**](./docs/frontend-components.md) - React components and hooks
-- [🔗 **API Documentation**](./docs/api-documentation.md) - Backend endpoints and database
+### **📖 Dokumentacja Użytkownika**
+- [📋 **Instrukcja Użytkownika**](./docs/user-guide.md) - Jak efektywnie korzystać z Blink Speech
+- [🔧 **Rozwiązywanie Problemów**](./docs/troubleshooting.md) - Rozwiązania typowych problemów
+- [⚙️ **Konfiguracja**](./docs/configuration.md) - Dostosowywanie ustawień i preferencji
 
-### **🔬 Core Technologies**
-- [👁️ **Gesture Detection**](./docs/gesture-detection.md) - Computer vision implementation
-- [🌐 **Frontend Architecture**](./docs/frontend.md) - React + Vite structure
-- [🚀 **Deployment Guide**](./docs/deployment.md) - Production deployment
+### **🏗️ Dokumentacja Techniczna**
+- [🛠️ **Przewodnik Instalacji**](./docs/installation.md) - Konfiguracja deweloperska i produkcyjna
+- [🏛️ **Przegląd Architektury**](./docs/architecture.md) - Projekt systemu i przepływ danych
+- [💻 **Przewodnik Deweloperski**](./docs/development-guide.md) - Współpraca i dobre praktyki
+- [🧩 **Komponenty Frontend**](./docs/frontend-components.md) - Komponenty React i hooki
+- [🔗 **Dokumentacja API**](./docs/api-documentation.md) - Endpointy backendu i baza danych
 
-📋 **[Complete Documentation Hub](./docs/README.md)** - Start here for all documentation
+### **🔬 Technologie Podstawowe**
+- [👁️ **Wykrywanie Gestów**](./docs/gesture-detection.md) - Implementacja widzenia komputerowego
+- [🌐 **Architektura Frontend**](./docs/frontend.md) - Struktura React + Vite
+- [🚀 **Przewodnik Wdrożenia**](./docs/deployment.md) - Wdrożenie produkcyjne
+
+📋 **[Centrum Dokumentacji](./docs/README.md)** - Zacznij tutaj, aby znaleźć całą dokumentację
 
 ---
 
-## 👥 **Team**
+## 👥 **Zespół**
 
-| Role | Name | GitHub | 
+| Rola | Imię i nazwisko | GitHub | 
 |------|------|---------|
-| 🧠 **Project Lead** | Md Athar Jamal Makki | [@atharhive](https://github.com/atharhive) |
-| 🎨 **Frontend Lead** | Akshad Jogi | [@akshad-exe](https://github.com/akshad-exe) |
-| 🛠️ **Backend Lead** | Ayush Sarkar | [@dev-Ninjaa](https://github.com/dev-Ninjaa) | 
+| 🧠 **Lider Projektu** | Md Athar Jamal Makki | [@atharhive](https://github.com/atharhive) |
+| 🎨 **Lider Frontend** | Akshad Jogi | [@akshad-exe](https://github.com/akshad-exe) |
+| 🛠️ **Lider Backend** | Ayush Sarkar | [@dev-Ninjaa](https://github.com/dev-Ninjaa) | 
 ---
 
-## 🎯 **How It Works**
+## 🎯 **Jak To Działa**
 
-### **1. 👁️ Gesture Recognition**
-Advanced computer vision powered by MediaPipe and WebGazer.js detects:
-- **Blink Patterns**: Single, double, triple, and long blinks
-- **Gaze Directions**: Left, right, up, down, and center positioning
-- **Combined Gestures**: Blinks + gaze for complex communication (20+ combinations)
+**Dla początkujących:** Aplikacja działa w kilku prostych krokach - najpierw wykrywa twoje ruchy oczu, potem analizuje je, następnie zamienia na tekst, a na końcu wypowiada ten tekst głośno.
 
-### **2. 🎯 Real-time Processing**
-- **<150ms Detection Latency**: Near-instantaneous gesture recognition
-- **Eye Aspect Ratio (EAR)**: Scientific method for accurate blink detection
-- **Adaptive Thresholds**: Automatic calibration for optimal performance
-- **15-30 FPS Processing**: Smooth real-time operation
+### **1. 👁️ Rozpoznawanie Gestów**
+Zaawansowane widzenie komputerowe wykorzystujące MediaPipe i WebGazer.js wykrywa:
+- **Wzorce Mrugnięć**: Pojedyncze, podwójne, potrójne i długie mrugnięcia
+- **Kierunki Spojrzenia**: Pozycjonowanie w lewo, prawo, górę, dół i środek
+- **Gesty Złożone**: Mrugnięcia + spojrzenia dla złożonej komunikacji (ponad 20 kombinacji)
 
-### **3. 🗣️ Speech Synthesis**
-- **Web Speech API**: High-quality, natural-sounding voices
-- **Multi-language Support**: Works with any language
-- **Customizable Voice**: Adjust rate, pitch, and volume
-- **<1s Speech Latency**: From gesture to spoken word
+### **2. 🎯 Przetwarzanie w Czasie Rzeczywistym**
+- **<150ms Opóźnienie Wykrywania**: Niemal natychmiastowe rozpoznawanie gestów
+- **Eye Aspect Ratio (EAR)**: Naukowa metoda dokładnego wykrywania mrugnięć
+- **Adaptacyjne Progi**: Automatyczna kalibracja dla optymalnej wydajności
+- **Przetwarzanie 15-30 FPS**: Płynne działanie w czasie rzeczywistym
 
-### **4. 🔒 Privacy & Security**
-- **100% Local Processing**: No video data ever leaves your device
-- **HTTPS Encryption**: Secure communication protocols
-- **Anonymous Usage**: No personal information required
-- **Local Storage**: Settings saved securely on your device
+### **3. 🗣️ Synteza Mowy**
+- **Web Speech API**: Wysoka jakość, naturalnie brzmiące głosy
+- **Wsparcie Wielu Języków**: Działa z dowolnym językiem
+- **Konfigurowalny Głos**: Dostosuj szybkość, wysokość i głośność
+- **<1s Opóźnienie Mowy**: Od gestu do wypowiedzianego słowa
 
----
-
-## 🏥 **Medical & Healthcare Applications**
-
-### **Critical Care Benefits**
-🚨 **Emergency Communication**: Instant access to critical phrases ("Help", "Pain", "Emergency")  
-📊 **Patient Monitoring**: Non-verbal feedback for medical assessment  
-🔄 **Telemedicine Integration**: Remote patient communication capabilities  
-⚡ **Rapid Response**: Immediate notification systems for urgent needs
-
-### **Rehabilitation Support**
-🧠 **Stroke Recovery**: Bridge communication during speech therapy  
-💪 **Motor Skill Development**: Eye-tracking exercises aid neurological recovery  
-📈 **Progress Tracking**: Monitor improvement in motor control and communication  
-🎯 **Adaptive Learning**: System learns and adapts to individual capabilities
-
-### **Long-term Care**
-🏠 **Home Healthcare**: Enables independent communication with caregivers  
-📱 **Family Connection**: Stay connected with loved ones remotely  
-🔔 **Alert Systems**: Customizable emergency and routine notifications  
-📝 **Care Documentation**: Optional logging for healthcare providers
+### **4. 🔒 Prywatność i Bezpieczeństwo**
+- **100% Lokalne Przetwarzanie**: Żadne dane wideo nigdy nie opuszczają twojego urządzenia
+- **Szyfrowanie HTTPS**: Bezpieczne protokoły komunikacji
+- **Anonimowe Użytkowanie**: Nie wymaga żadnych danych osobowych
+- **Lokalna Pamięć**: Ustawienia zapisywane bezpiecznie na twoim urządzeniu
 
 ---
 
-## 📊 **Performance & Compatibility**
+## 🏥 **Zastosowania Medyczne i Zdrowotne**
 
-### **System Specifications**
-- **Detection Accuracy**: >95% in optimal conditions
-- **Latency**: <150ms gesture recognition, <1s speech output
-- **Frame Rate**: Adaptive 15-30 FPS based on device capabilities
-- **Memory Usage**: <100MB typical operation
-- **Storage**: ~50MB for complete application cache
+**Dla początkujących:** Poniżej znajdziesz przykłady, jak ta aplikacja może być używana w szpitalach, klinikach i w domu do pomocy pacjentom.
 
-### **Browser Support**
-| Browser | Version | MediaPipe | WebGazer | Speech API | Status |
+### **Korzyści w Opiece Krytycznej**
+🚨 **Komunikacja Awaryjna**: Natychmiastowy dostęp do krytycznych fraz ("Pomoc", "Ból", "Nagły wypadek")  
+📊 **Monitorowanie Pacjenta**: Niewerbalna informacja zwrotna do oceny medycznej  
+🔄 **Integracja z Telemedycyną**: Możliwości zdalnej komunikacji z pacjentem  
+⚡ **Szybka Reakcja**: Natychmiastowe systemy powiadamiania o pilnych potrzebach
+
+### **Wsparcie Rehabilitacyjne**
+🧠 **Rekonwalescencja po Udarze**: Mostek komunikacyjny podczas terapii mowy  
+💪 **Rozwój Umiejętności Motorycznych**: Ćwiczenia śledzenia wzrokiem wspomagają regenerację neurologiczną  
+📈 **Śledzenie Postępów**: Monitorowanie poprawy w kontroli motorycznej i komunikacji  
+🎯 **Adaptacyjne Uczenie**: System uczy się i dostosowuje do indywidualnych możliwości
+
+### **Opieka Długoterminowa**
+🏠 **Opieka Domowa**: Umożliwia niezależną komunikację z opiekunami  
+📱 **Kontakt z Rodziną**: Pozostań w kontakcie z bliskimi zdalnie  
+🔔 **Systemy Alarmowe**: Konfigurowalne powiadomienia awaryjne i rutynowe  
+📝 **Dokumentacja Opieki**: Opcjonalne logowanie dla dostawców opieki zdrowotnej
+
+---
+
+## 📊 **Wydajność i Kompatybilność**
+
+**Dla początkujących:** Ta sekcja pokazuje, jak szybko i dokładnie działa aplikacja oraz na jakich urządzeniach i przeglądarkach można jej używać.
+
+### **Specyfikacje Systemu**
+- **Dokładność Wykrywania**: >95% w optymalnych warunkach
+- **Opóźnienie**: <150ms rozpoznawanie gestów, <1s wyjście mowy
+- **Liczba Klatek**: Adaptacyjne 15-30 FPS w zależności od możliwości urządzenia
+- **Użycie Pamięci**: <100MB podczas typowej pracy
+- **Pamięć**: ~50MB dla pełnej pamięci podręcznej aplikacji
+
+### **Wsparcie Przeglądarek**
+| Przeglądarka | Wersja | MediaPipe | WebGazer | Speech API | Status |
 |---------|---------|:---------:|:--------:|:----------:|:------:|
-| Chrome | 80+ | ✅ | ✅ | ✅ | ✅ **Optimal** |
-| Firefox | 75+ | ✅ | ✅ | ✅ | ✅ **Excellent** |
-| Safari | 13+ | ✅ | ⚠️ | ✅ | ✅ **Good** |
-| Edge | 80+ | ✅ | ✅ | ✅ | ✅ **Excellent** |
+| Chrome | 80+ | ✅ | ✅ | ✅ | ✅ **Optymalna** |
+| Firefox | 75+ | ✅ | ✅ | ✅ | ✅ **Doskonała** |
+| Safari | 13+ | ✅ | ⚠️ | ✅ | ✅ **Dobra** |
+| Edge | 80+ | ✅ | ✅ | ✅ | ✅ **Doskonała** |
 
-### **Device Compatibility**
-🖥️ **Desktop**: Windows, macOS, Linux - Full feature support  
-📱 **Tablet**: iPad, Android tablets - Optimized touch interface  
-📲 **Mobile**: Smartphone support with adaptive UI  
-🎥 **Cameras**: Built-in webcams, USB cameras, HD recommended
-
----
-
-## 🚀 **Roadmap & Future Features**
-
-### **🔮 Version 2.0 (In Development)**
-- 🧠 **AI-Powered Phrase Prediction**: Context-aware phrase suggestions
-- 🌍 **Enhanced Multi-language**: 50+ languages with native voices
-- 📊 **Analytics Dashboard**: Usage patterns and communication insights
-- 🔗 **Healthcare Integrations**: Direct API connections to medical systems
-
-### **🌟 Future Innovations**
-- 👓 **AR/VR Integration**: Wearable device support (AR glasses, smart contact lenses)
-- 🤖 **Machine Learning**: Personalized gesture recognition improvement
-- 🏥 **Medical Partnerships**: Integration with hospital communication systems
-- 🌐 **Offline PWA**: Complete offline functionality as Progressive Web App
-- 🎮 **Gamification**: Interactive learning and practice modes
-
-### **🤝 Community Features**
-- 👥 **Gesture Sharing**: Community-driven phrase mappings
-- 📚 **Learning Resources**: Tutorials and best practices
-- 🔧 **Plugin System**: Extensible architecture for custom integrations
-- 📱 **Mobile Apps**: Native iOS/Android applications
+### **Kompatybilność Urządzeń**
+🖥️ **Komputer Stacjonarny**: Windows, macOS, Linux - Pełne wsparcie funkcji  
+📱 **Tablet**: iPad, tablety Android - Zoptymalizowany interfejs dotykowy  
+📲 **Telefon Komórkowy**: Wsparcie dla smartfonów z adaptacyjnym UI  
+🎥 **Kamery**: Wbudowane kamery internetowe, kamery USB, zalecane HD
 
 ---
 
-## 🌟 **Key Features**
+## 🚀 **Mapa Drogowa i Przyszłe Funkcje**
 
-### **🎯 Core Capabilities**
-✅ **Zero Installation** - Works instantly in any modern browser  
-✅ **Complete Privacy** - 100% client-side processing, no data transmission  
-✅ **Real-time Recognition** - <150ms gesture detection latency  
-✅ **Custom Mappings** - Create your own gesture-to-phrase combinations  
-✅ **Multi-language** - Support for any language or custom phrases  
-✅ **Offline Ready** - Core features work without internet connection  
+**Dla początkujących:** Poniżej znajdziesz plany na przyszłość - nad czym zespół obecnie pracuje i co planuje dodać w kolejnych wersjach aplikacji.
 
-### **♿ Accessibility Features**
-✅ **High Contrast Mode** - Enhanced visibility for users with visual impairments  
-✅ **Large Text Options** - Scalable interface for better readability  
-✅ **Screen Reader Support** - Full compatibility with assistive technologies  
-✅ **Keyboard Navigation** - Complete keyboard accessibility  
-✅ **Voice Customization** - Adjustable speech rate, pitch, and volume  
-✅ **Emergency Mode** - Quick access to critical communication phrases  
+### **🔮 Wersja 2.0 (W Trakcie Rozwoju)**
+- 🧠 **Predykcja Fraz Oparta na AI**: Kontekstowe sugestie fraz
+- 🌍 **Ulepszone Wsparcie Wielu Języków**: Ponad 50 języków z natywnymi głosami
+- 📊 **Panel Analityczny**: Wzorce użytkowania i wgląd w komunikację
+- 🔗 **Integracje ze Służbą Zdrowia**: Bezpośrednie połączenia API z systemami medycznymi
 
-### **🔧 Advanced Features**
-✅ **Adaptive Performance** - Automatic optimization based on device capabilities  
-✅ **Calibration System** - Personalized setup for optimal accuracy  
-✅ **Data Export/Import** - Share settings between devices and users  
-✅ **Cloud Sync** - Optional backup and synchronization (Supabase)  
-✅ **SMS Integration** - Send messages via Twilio API  
-✅ **Real-time Logging** - Optional activity tracking for healthcare providers
+### **🌟 Przyszłe Innowacje**
+- 👓 **Integracja AR/VR**: Wsparcie urządzeń nosalnych (okulary AR, inteligentne soczewki kontaktowe)
+- 🤖 **Uczenie Maszynowe**: Spersonalizowana poprawa rozpoznawania gestów
+- 🏥 **Partnerstwa Medyczne**: Integracja z szpitalnymi systemami komunikacji
+- 🌐 **Offline PWA**: Pełna funkcjonalność offline jako Progressive Web App
+- 🎮 **Gamifikacja**: Interaktywne tryby nauki i praktyki
+
+### **🤝 Funkcje Społecznościowe**
+- 👥 **Udostępnianie Gestów**: Mapowania fraz tworzone przez społeczność
+- 📚 **Zasoby Edukacyjne**: Tutoriale i najlepsze praktyki
+- 🔧 **System Wtyczek**: Rozszerzalna architektura dla niestandardowych integracji
+- 📱 **Aplikacje Mobilne**: Natywne aplikacje iOS/Android
 
 ---
 
-## 🤝 **Contributing**
+## 🌟 **Kluczowe Funkcje**
 
-We welcome contributions from developers, researchers, and accessibility advocates! Here's how you can help:
+### **🎯 Główne Możliwości**
+✅ **Zero Instalacji** - Działa natychmiast w każdej nowoczesnej przeglądarce  
+✅ **Pełna Prywatność** - 100% przetwarzanie po stronie klienta, bez przesyłania danych  
+✅ **Rozpoznawanie w Czasie Rzeczywistym** - <150ms opóźnienie wykrywania gestów  
+✅ **Niestandardowe Mapowania** - Twórz własne kombinacje gestów do fraz  
+✅ **Wiele Języków** - Wsparcie dla dowolnego języka lub niestandardowych fraz  
+✅ **Gotowość Offline** - Podstawowe funkcje działają bez połączenia z internetem  
 
-### **🛠️ Development**
-- 🐛 **Report Bugs**: [Create an issue](https://github.com/akshad-exe/Blink-Speech/issues/new) with detailed reproduction steps
-- 💡 **Suggest Features**: Share ideas for improving accessibility and usability
-- 🔧 **Submit Code**: Fork, develop, and create pull requests
-- 📝 **Documentation**: Help improve guides, tutorials, and API docs
+### **♿ Funkcje Dostępności**
+✅ **Tryb Wysokiego Kontrastu** - Zwiększona widoczność dla użytkowników z wadami wzroku  
+✅ **Opcje Dużego Tekstu** - Skalowalny interfejs dla lepszej czytelności  
+✅ **Wsparcie Czytnika Ekranu** - Pełna kompatybilność z technologiami asystującymi  
+✅ **Nawigacja Klawiaturą** - Pełna dostępność za pomocą klawiatury  
+✅ **Personalizacja Głosu** - Regulowana szybkość mowy, wysokość i głośność  
+✅ **Tryb Awaryjny** - Szybki dostęp do krytycznych fraz komunikacyjnych  
 
-### **🧪 Testing & Feedback**
-- 🏥 **Healthcare Professionals**: Provide clinical insights and use case feedback
-- ♿ **Accessibility Users**: Share experiences and improvement suggestions
-- 🌍 **Localization**: Help translate and adapt for different languages/cultures
-- 📊 **Research**: Academic collaboration on computer vision and accessibility
-
-### **📋 Contribution Guidelines**
-1. Read our [Development Guide](./docs/development-guide.md)
-2. Follow our [Code of Conduct](./CODE_OF_CONDUCT.md)
-3. Check existing issues and discussions before creating new ones
-4. Write clear commit messages and documentation
-5. Test thoroughly and include relevant test cases
-
----
-
-## 📄 **License**
-
-Blink Speech is open-source software licensed under the [MIT License](./LICENSE). This means you can:
-
-✅ **Use** - For personal, commercial, or research purposes  
-✅ **Modify** - Adapt the code to your specific needs  
-✅ **Distribute** - Share with others or deploy your own version  
-✅ **Contribute** - Help improve the project for everyone  
+### **🔧 Zaawansowane Funkcje**
+✅ **Adaptacyjna Wydajność** - Automatyczna optymalizacja w oparciu o możliwości urządzenia  
+✅ **System Kalibracji** - Spersonalizowana konfiguracja dla optymalnej dokładności  
+✅ **Eksport/Import Danych** - Udostępniaj ustawienia między urządzeniami i użytkownikami  
+✅ **Synchronizacja Chmurowa** - Opcjonalna kopia zapasowa i synchronizacja (Supabase)  
+✅ **Integracja SMS** - Wysyłaj wiadomości przez Twilio API  
+✅ **Logowanie w Czasie Rzeczywistym** - Opcjonalne śledzenie aktywności dla dostawców opieki zdrowotnej
 
 ---
 
-## 🆘 **Support & Community**
+## 🤝 **Współpraca**
 
-### **📞 Get Help**
-- 📖 **Documentation**: [Complete guides and tutorials](./docs/README.md)
-- 🔧 **Troubleshooting**: [Common issues and solutions](./docs/troubleshooting.md)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/akshad-exe/Blink-Speech/discussions) for questions and ideas
-- 🐛 **Bug Reports**: [Issue Tracker](https://github.com/akshad-exe/Blink-Speech/issues) for technical problems
+Zapraszamy do współpracy programistów, badaczy i rzeczników dostępności! Oto jak możesz pomóc:
 
-### **🌐 Connect**
+**Dla początkujących:** Jeśli uczysz się programowania, to doskonały projekt do nauki! Możesz zgłaszać błędy, sugerować funkcje, lub nawet spróbować wprowadzić swoje pierwsze zmiany w kodzie. Nie musisz być ekspertem - każda pomoc jest cenna.
+
+### **🛠️ Rozwój**
+- 🐛 **Zgłaszaj Błędy**: [Utwórz zgłoszenie](https://github.com/akshad-exe/Blink-Speech/issues/new) ze szczegółowymi krokami reprodukcji
+- 💡 **Sugeruj Funkcje**: Dziel się pomysłami na poprawę dostępności i użyteczności
+- 🔧 **Wysyłaj Kod**: Zrób fork, rozwijaj i twórz pull requesty
+- 📝 **Dokumentacja**: Pomóż ulepszyć przewodniki, tutoriale i dokumentację API
+
+### **🧪 Testowanie i Opinie**
+- 🏥 **Specjaliści Służby Zdrowia**: Dostarczaj kliniczne spostrzeżenia i opinie o przypadkach użycia
+- ♿ **Użytkownicy Funkcji Dostępności**: Dziel się doświadczeniami i sugestiami ulepszeń
+- 🌍 **Lokalizacja**: Pomóż tłumaczyć i dostosowywać do różnych języków/kultur
+- 📊 **Badania**: Akademicka współpraca nad wizją komputerową i dostępnością
+
+### **📋 Wytyczne Współpracy**
+1. Przeczytaj nasz [Przewodnik Deweloperski](./docs/development-guide.md)
+2. Postępuj zgodnie z naszym [Kodeksem Postępowania](./CODE_OF_CONDUCT.md)
+3. Sprawdź istniejące zgłoszenia i dyskusje przed utworzeniem nowych
+4. Pisz jasne komunikaty commitów i dokumentację
+5. Testuj dokładnie i dołącz odpowiednie przypadki testowe
+
+---
+
+## 📄 **Licencja**
+
+Blink Speech jest oprogramowaniem open-source na licencji [MIT License](./LICENSE). Oznacza to, że możesz:
+
+✅ **Używać** - Do celów osobistych, komercyjnych lub badawczych  
+✅ **Modyfikować** - Dostosować kod do swoich specyficznych potrzeb  
+✅ **Dystrybuować** - Dzielić się z innymi lub wdrażać własną wersję  
+✅ **Współpracować** - Pomóc w ulepszeniu projektu dla wszystkich  
+
+**Dla początkujących:** Licencja MIT to jedna z najbardziej wolnych licencji open-source. Możesz robić z tym projektem prawie wszystko, co chcesz, także używać go w komercyjnych celach.  
+
+---
+
+## 🆘 **Wsparcie i Społeczność**
+
+### **📞 Uzyskaj Pomoc**
+- 📖 **Dokumentacja**: [Pełne przewodniki i tutoriale](./docs/README.md)
+- 🔧 **Rozwiązywanie Problemów**: [Typowe problemy i rozwiązania](./docs/troubleshooting.md)
+- 💬 **Dyskusje**: [GitHub Discussions](https://github.com/akshad-exe/Blink-Speech/discussions) na pytania i pomysły
+- 🐛 **Zgłaszanie Błędów**: [Issue Tracker](https://github.com/akshad-exe/Blink-Speech/issues) na problemy techniczne
+
+### **🌐 Połącz się**
 - 🐙 **GitHub**: [@akshad-exe/Blink-Speech](https://github.com/akshad-exe/Blink-Speech)
-- 📧 **Contact**: For accessibility partnerships and healthcare integrations
-- 🤝 **Collaborate**: Open to academic research partnerships
+- 📧 **Kontakt**: W sprawie partnerstw dostępności i integracji zdrowotnych
+- 🤝 **Współpracuj**: Otwarci na partnerstwa w badaniach akademickich
 
-### **🚨 Emergency Support**
-For urgent accessibility needs or critical bugs affecting communication:
-1. Create a high-priority GitHub issue
-2. Include detailed system information and reproduction steps
-3. Tag the issue with "urgent" or "accessibility-critical"
+### **🚨 Pilne Wsparcie**
+W przypadku pilnych potrzeb dostępności lub krytycznych błędów wpływających na komunikację:
+1. Utwórz priorytetowe zgłoszenie na GitHub
+2. Dołącz szczegółowe informacje o systemie i kroki reprodukcji
+3. Oznacz zgłoszenie jako "urgent" lub "accessibility-critical"
+
+**Dla początkujących:** Jeśli masz problem z używaniem aplikacji, najpierw sprawdź sekcję Rozwiązywanie Problemów. Jeśli to nie pomoże, śmiało zadaj pytanie w GitHub Discussions - społeczność i twórcy chętnie pomogą!
 
 ---
 
-## 🙏 **Acknowledgments**
+## 🙏 **Podziękowania**
 
-**Research & Inspiration**:
-- MediaPipe team at Google for facial landmark detection
-- WebGazer.js contributors for browser-based eye tracking
-- Accessibility research community for guidance and feedback
-- Healthcare professionals providing real-world insights
+**Badania i Inspiracja**:
+- Zespół MediaPipe w Google za wykrywanie punktów orientacyjnych twarzy
+- Twórcy WebGazer.js za śledzenie wzroku w przeglądarce
+- Społeczność badań nad dostępnością za wskazówki i opinie
+- Specjaliści służby zdrowia dostarczający praktycznych spostrzeżeń
 
-**Open Source Technologies**:
-- React and Vite communities for modern web development tools
-- TensorFlow.js for browser-based machine learning
-- Supabase for backend infrastructure
-- Tailwind CSS and Radix UI for accessible design systems
+**Technologie Open Source**:
+- Społeczności React i Vite za nowoczesne narzędzia do tworzenia aplikacji webowych
+- TensorFlow.js za uczenie maszynowe w przeglądarce
+- Supabase za infrastrukturę backendu
+- Tailwind CSS i Radix UI za dostępne systemy projektowania
 
-**Special Thanks**:
-- Beta testers who provided crucial feedback
-- Accessibility advocates who guided our design decisions
-- Healthcare institutions that shared use case requirements
-- Open source contributors who helped improve the codebase
+**Specjalne Podziękowania**:
+- Testerzy beta, którzy dostarczyli kluczowych opinii
+- Rzecznicy dostępności, którzy kształtowali nasze decyzje projektowe
+- Instytucje służby zdrowia, które podzieliły się wymaganiami przypadków użycia
+- Współtwórcy open source, którzy pomogli ulepszyć kod
 
 ---
 
 <div align="center">
 
-**🌟 If Blink Speech has helped you or someone you know, please consider starring the repository to help others discover this tool! 🌟**
+**🌟 Jeśli Blink Speech pomógł Tobie lub komuś, kogo znasz, rozważ oznaczenie repozytorium gwiazdką, aby pomóc innym odkryć to narzędzie! 🌟**
 
-[⭐ **Star on GitHub** ⭐](https://github.com/akshad-exe/Blink-Speech)
+[⭐ **Oznacz gwiazdką na GitHub** ⭐](https://github.com/akshad-exe/Blink-Speech)
 
-*"Communication is a human right. Technology should make it accessible to everyone."*
+*"Komunikacja jest prawem człowieka. Technologia powinna uczynić ją dostępną dla wszystkich."*
 
 </div>
