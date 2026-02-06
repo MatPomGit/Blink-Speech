@@ -26,7 +26,7 @@ Ten przewodnik przeprowadzi Cię krok po kroku przez proces instalacji Blink Spe
 **Co to robi:** Pobiera całą kopię projektu z GitHub na Twój komputer, tworząc lokalną wersję do pracy.
 
 ```bash
-git clone https://github.com/akshad-exe/Blink-Speech.git
+git clone https://github.com/MatPomGit/Blink-Speech.git
 cd Blink-Speech
 ```
 

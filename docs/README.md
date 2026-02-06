@@ -35,7 +35,7 @@ Aby szybko rozpocząć pracę z projektem, wykonaj poniższe kroki:
 
 1. **Sklonuj repozytorium** (pobierz kod źródłowy na swój komputer)
    ```bash
-   git clone https://github.com/akshad-exe/Blink-Speech.git
+   git clone https://github.com/MatPomGit/Blink-Speech.git
    cd Blink-Speech
    ```
 
@@ -90,7 +90,7 @@ Poniższa tabela przedstawia technologie użyte w projekcie wraz z ich przeznacz
 | Rola | Imię i Nazwisko | GitHub |
 |------|------|---------|
 | 🧠 **Lider Projektu** | Md Athar Jamal Makki | [@atharhive](https://github.com/atharhive) |
-| 🎨 **Frontend** | Akshad Jogi | [@akshad-exe](https://github.com/akshad-exe) |
+| 🎨 **Frontend** | Akshad Jogi | [@MatPomGit](https://github.com/MatPomGit) |
 | 🛠 **Backend** | Ayush Sarkar | [@dev-Ninjaa](https://github.com/dev-Ninjaa) |
 
 ---
@@ -115,8 +115,8 @@ Poniższa tabela przedstawia technologie użyte w projekcie wraz z ich przeznacz
 ## 🔗 Zasoby Zewnętrzne
 
 - [**Demo na Żywo**](https://blink-speech.vercel.app) - Wypróbuj aplikację bez instalacji
-- [**Repozytorium Projektu**](https://github.com/akshad-exe/Blink-Speech) - Kod źródłowy projektu
-- [**Zgłaszanie Problemów**](https://github.com/akshad-exe/Blink-Speech/issues) - Zgłaszaj błędy lub proponuj nowe funkcje
+- [**Repozytorium Projektu**](https://github.com/MatPomGit/Blink-Speech) - Kod źródłowy projektu
+- [**Zgłaszanie Problemów**](https://github.com/MatPomGit/Blink-Speech/issues) - Zgłaszaj błędy lub proponuj nowe funkcje
 - [**Dokumentacja WebGazer.js**](https://webgazer.cs.brown.edu/) - Biblioteka do śledzenia wzroku (eye tracking)
 - [**MediaPipe Face Mesh**](https://google.github.io/mediapipe/solutions/face_mesh.html) - Wykrywanie punktów charakterystycznych twarzy
 
@@ -128,4 +128,4 @@ Ten projekt jest udostępniony na licencji MIT License. Szczegóły znajdziesz w
 
 ---
 
-**Potrzebujesz pomocy?** Sprawdź nasz [Przewodnik Rozwiązywania Problemów](./troubleshooting.md) lub [otwórz nowe zgłoszenie](https://github.com/akshad-exe/Blink-Speech/issues/new).
+**Potrzebujesz pomocy?** Sprawdź nasz [Przewodnik Rozwiązywania Problemów](./troubleshooting.md) lub [otwórz nowe zgłoszenie](https://github.com/MatPomGit/Blink-Speech/issues/new).
