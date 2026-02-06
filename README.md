@@ -15,12 +15,12 @@ Blink Speech to rewolucyjna aplikacja wspomagająca komunikację, działająca w
 
 ## 📊 **Statystyki Projektu**
 
-![GitHub stars](https://img.shields.io/github/stars/akshad-exe/Blink-Speech?style=social)
-![GitHub forks](https://img.shields.io/github/forks/akshad-exe/Blink-Speech?style=social)
-![GitHub issues](https://img.shields.io/github/issues/akshad-exe/Blink-Speech)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/akshad-exe/Blink-Speech)
-![GitHub last commit](https://img.shields.io/github/last-commit/akshad-exe/Blink-Speech)
-![GitHub code size](https://img.shields.io/github/languages/code-size/akshad-exe/Blink-Speech)
+![GitHub stars](https://img.shields.io/github/stars/MatPomGit/Blink-Speech?style=social)
+![GitHub forks](https://img.shields.io/github/forks/MatPomGit/Blink-Speech?style=social)
+![GitHub issues](https://img.shields.io/github/issues/MatPomGit/Blink-Speech)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/MatPomGit/Blink-Speech)
+![GitHub last commit](https://img.shields.io/github/last-commit/MatPomGit/Blink-Speech)
+![GitHub code size](https://img.shields.io/github/languages/code-size/MatPomGit/Blink-Speech)
 
 ---
 
@@ -113,7 +113,7 @@ Blink Speech narodził się z prostego, ale potężnego przekonania: **komunikac
 
 1. **📥 Sklonuj Repozytorium**
    ```bash
-   git clone https://github.com/akshad-exe/Blink-Speech.git
+   git clone https://github.com/MatPomGit/Blink-Speech.git
    cd Blink-Speech
    ```
 
@@ -317,7 +317,7 @@ Zapraszamy do współpracy programistów, badaczy i rzeczników dostępności! O
 **Dla początkujących:** Jeśli uczysz się programowania, to doskonały projekt do nauki! Możesz zgłaszać błędy, sugerować funkcje, lub nawet spróbować wprowadzić swoje pierwsze zmiany w kodzie. Nie musisz być ekspertem - każda pomoc jest cenna.
 
 ### **🛠️ Rozwój**
-- 🐛 **Zgłaszaj Błędy**: [Utwórz zgłoszenie](https://github.com/akshad-exe/Blink-Speech/issues/new) ze szczegółowymi krokami reprodukcji
+- 🐛 **Zgłaszaj Błędy**: [Utwórz zgłoszenie](https://github.com/MatPomGit/Blink-Speech/issues/new) ze szczegółowymi krokami reprodukcji
 - 💡 **Sugeruj Funkcje**: Dziel się pomysłami na poprawę dostępności i użyteczności
 - 🔧 **Wysyłaj Kod**: Zrób fork, rozwijaj i twórz pull requesty
 - 📝 **Dokumentacja**: Pomóż ulepszyć przewodniki, tutoriale i dokumentację API
@@ -355,11 +355,11 @@ Blink Speech jest oprogramowaniem open-source na licencji [MIT License](./LICENS
 ### **📞 Uzyskaj Pomoc**
 - 📖 **Dokumentacja**: [Pełne przewodniki i tutoriale](./docs/README.md)
 - 🔧 **Rozwiązywanie Problemów**: [Typowe problemy i rozwiązania](./docs/troubleshooting.md)
-- 💬 **Dyskusje**: [GitHub Discussions](https://github.com/akshad-exe/Blink-Speech/discussions) na pytania i pomysły
-- 🐛 **Zgłaszanie Błędów**: [Issue Tracker](https://github.com/akshad-exe/Blink-Speech/issues) na problemy techniczne
+- 💬 **Dyskusje**: [GitHub Discussions](https://github.com/MatPomGit/Blink-Speech/discussions) na pytania i pomysły
+- 🐛 **Zgłaszanie Błędów**: [Issue Tracker](https://github.com/MatPomGit/Blink-Speech/issues) na problemy techniczne
 
 ### **🌐 Połącz się**
-- 🐙 **GitHub**: [@akshad-exe/Blink-Speech](https://github.com/akshad-exe/Blink-Speech)
+- 🐙 **GitHub**: [@MatPomGit/Blink-Speech](https://github.com/MatPomGit/Blink-Speech)
 - 📧 **Kontakt**: W sprawie partnerstw dostępności i integracji zdrowotnych
 - 🤝 **Współpracuj**: Otwarci na partnerstwa w badaniach akademickich
 
@@ -399,7 +399,7 @@ W przypadku pilnych potrzeb dostępności lub krytycznych błędów wpływający
 
 **🌟 Jeśli Blink Speech pomógł Tobie lub komuś, kogo znasz, rozważ oznaczenie repozytorium gwiazdką, aby pomóc innym odkryć to narzędzie! 🌟**
 
-[⭐ **Oznacz gwiazdką na GitHub** ⭐](https://github.com/akshad-exe/Blink-Speech)
+[⭐ **Oznacz gwiazdką na GitHub** ⭐](https://github.com/MatPomGit/Blink-Speech)
 
 *"Komunikacja jest prawem człowieka. Technologia powinna uczynić ją dostępną dla wszystkich."*
 

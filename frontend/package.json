@@ -1,7 +1,8 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "blink-speech-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Browser-based assistive communication app using eye gaze and blinks",
   "type": "module",
   "scripts": {
     "dev": "vite",
