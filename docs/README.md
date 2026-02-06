@@ -21,7 +21,7 @@ Dokumentacja jest podzielona na następujące sekcje, które pomogą Ci zrozumie
 ### 💻 **Rozwój Projektu**
 - [**Przewodnik Dewelopera**](./development-guide.md) - Konfiguracja środowiska deweloperskiego, workflow i zasady kontrybucji do projektu. Niezbędnik dla każdego, kto chce rozwijać ten projekt.
 - [**Detekcja Gestów**](./gesture-detection.md) - Implementacja widzenia komputerowego i algorytmy rozpoznawania mrugnięć. Szczegółowe wyjaśnienie, jak działa system wykrywania gestów okulomotorycznych.
-<!-- - [**Synteza Mowy**](./speech-synthesis.md) - Szczegóły implementacji text-to-speech -->
+- [**Synteza Mowy**](./speech-synthesis.md) - Szczegóły implementacji text-to-speech
 
 ### 🚀 **Wdrożenie i Operacje**
 - [**Przewodnik Wdrożenia**](./deployment.md) - Instrukcje wdrażania aplikacji na środowisko produkcyjne. Dowiesz się, jak opublikować aplikację w Internecie.

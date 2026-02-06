@@ -1,14 +1,17 @@
 {
-  "name": "backend",
+  "name": "blink-speech-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API for Blink Speech - handles data persistence and SMS integration",
+  "main": "pages/api/patterns/[sid].ts",
   "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["accessibility", "assistive-technology", "eye-tracking", "communication"],
+  "author": "Blink Speech Team",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "@supabase/supabase-js": "^2.54.0",
